@@ -1,0 +1,137 @@
+body {
+  color: #222;
+}
+
+a {
+  color: #2EA2CC;
+}
+
+p,
+body .main-footer,
+.s-about li {
+  color: #888;
+}
+
+.color-element {
+  color: #2EA2CC;
+}
+
+.color-bg {
+  background-color: #2EA2CC;
+}
+
+.color-border {
+  border-color: #2EA2CC;
+}
+
+.bg-light {
+  background-color: #FAFAFA;
+}
+
+.bg-dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.bg-dark .s-descr::after {
+  background-color: #fff;
+}
+
+.bg-dark a {
+  color: #fff;
+}
+
+.top-mnu a:hover {
+  color: #2EA2CC;
+}
+
+.top-mnu a {
+  letter-spacing: 4px;
+}
+
+.top-text p {
+  color: #FAFAFA;
+  letter-spacing: 5px;
+}
+
+.personal-header {
+  letter-spacing: 2px;
+}
+
+.s-descr {
+  letter-spacing: 4px;
+}
+
+.s-descr::after {
+  background-color: #222;
+}
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.s-about p:nth-child(even) {
+  color: #2EA2CC;
+}
+
+.resume-container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resume-item .year {
+  background-color: #2EA2CC;
+  color: #fff;
+}
+
+.resume-item .resume-description {
+  letter-spacing: 1px;
+}
+
+.s-portfolio li {
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.s-portfolio li.active {
+  color: #fff;
+  border-bottom: 1px solid #2EA2CC;
+}
+
+.portfolio-item .port-item-cont a {
+  border-color: #2EA2CC;
+  color: #2EA2CC;
+}
+
+.main-footer .social-wrap a {
+  color: #2EA2CC;
+}
+
+.contact-icon {
+  color: #2EA2CC;
+}
+
+form input, form textarea {
+  letter-spacing: 2px;
+}
+
+form input:focus, form textarea:focus {
+  border: 1px solid #2EA2CC;
+}
+
+form button {
+  background-color: #2EA2CC;
+  letter-spacing: 3px;
+}
+
+form .form-group {
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.text-danger {
+  color: #2EA2CC;
+}
