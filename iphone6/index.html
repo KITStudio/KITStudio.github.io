@@ -22,6 +22,7 @@
 			<link rel='stylesheet' type='text/css' href='css/waves.min.css' >
 			<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
 			<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
+			<link rel="stylesheet" href="css/selectize.css">
 			<link rel='stylesheet' type='text/css' href='css/style.css' >
 		</head>
 
@@ -118,19 +119,19 @@
 
 								<div class="time-left">
 
-							<p class='font-alt wow fadeInUp' data-wow-delay='.6s' >До конца акции <span>осталось</span></p>
+									<p class='font-alt wow fadeInUp' data-wow-delay='.6s' >До конца акции <span>осталось</span></p>
 
-							<div id="christmascounter" class="wallcounter  wow fadeInUp" data-wow-delay='.6s'>
-									<div class="wrapper">
-										<div class=" fields days"></div>
-										<div class="fields hours"></div>
+									<div id="christmascounter" class="wallcounter  wow fadeInUp" data-wow-delay='.6s'>
+										<div class="wrapper">
+											<div class=" fields days"></div>
+											<div class="fields hours"></div>
 
-										<div class="fields minutes"></div>
+											<div class="fields minutes"></div>
 
-										<div class="fields seconds"></div>
+											<div class="fields seconds"></div>
+										</div>
 									</div>
 								</div>
-</div>
 
 								<div class='btns' >
 
@@ -308,7 +309,7 @@
 								</p>
 							</div>
 
-							<div class='col-feature wow fadeInLeft' data-wow-delay='.4s' >
+							<div class='col-feature wow fadeInRight' data-wow-delay='.4s' >
 								<i class='icon-basic-book' ></i>
 								<h4>Документация</h4>
 								<p>
@@ -586,7 +587,7 @@
 
 					<div class='row' >
 
-						<div class='col-md-4' >
+						<!-- <div class='col-md-4' >
 
 							<div class='p-table wow fadeInRight' data-wow-delay='.8s' >
 								<div class='header' >
@@ -657,10 +658,89 @@
 								</a>
 							</div>
 
+						</div> -->
+
+
+						<div class='background-element' id='background-element'></div>
+
+						<div class="col-md-6">
+							<div class='background-element' id='background-element'></div>
+							<div class='highlight-window' id='product-img'>
+								<div class='highlight-overlay' id='highlight-overlay'></div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class='product-item'>
+								<div class='main-content'>
+									<h2>Apple iPhone 6s 32gb(A1688)</h2>
+									<!-- <h1>Apple iPhone 6S 36Gb</h1> -->
+									<!-- <h3>Характеристики товара</h3> -->
+									<div class='description' id='description'>
+										<h3>Коротко о товаре</h3>
+										<ul>
+											<li>Apple iOS 9</li>
+											<li>экран 4.7", разрешение 1334x750</li>
+											<li>камера 12 МП, автофокус, F/2.2</li>
+											<li>память 32 Гб, без слота для карт памяти</li>
+											<li>3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС</li>
+											<li>объем оперативной памяти 2 Гб</li>
+											<li>аккумулятор 1715 мА.ч</li>
+											<li>вес 143 г, ШxВxТ 67.10x138.30x7.10 мм</li>
+										</ul>
+									</div>
+									<div class='highlight-window  mobile' id='product-img'>
+										<div class='highlight-overlay' id='highlight-overlay-mobile'></div>
+									</div>
+
+									<div class='options'>
+										<div class='color-options'>
+											<h3>Цвет</h3>
+											<div class='color-picker'>
+												<div class='color overlay' id='color-overlay'><div class='check'></div></div>
+												<div class='color color-a' id='color-a'></div>
+												<div class='color color-b' id='color-b'></div>
+												<div class='color color-c' id='color-c'></div>
+												<div class='color color-d' id='color-d'></div>
+											</div>
+											<span class='small' >Цвет : <span id='color-name'>Rosegold</span></span>
+										</div>
+										<div class='size-picker'>
+											<!-- Size: -->
+											<div class='range-picker' id='range-picker'>
+												<!-- <div>44</div><div>46</div><div>48</div><div class='active'>50</div><div>52</div><div>54</div> -->
+											</div>
+											<!-- <a class='small align-right' href='#'>VIEW SIZE-CHART</a> -->
+										</div>
+									</div>
+									
+									<form action="">
+										<input type="hidden" name="color" value="Rosegold" id="color-input">
+										<input type="text" name="name" placeholder="Ваше имя..." required>
+										<input type="tel" name="phone" placeholder="Ваш телефон..." required>
+										<input type="text" name="address" placeholder="Ваш адрес..." required>
+										<select name="country" id="select-country" >
+											<option disabled selected>Выберите страну...</option>
+											<option >Россия</option>
+											<option >Белоруссия</option>
+											<option >Украина</option>
+										</select>
+										
+										<div class='divider'></div>
+										<div class='purchase-info'>
+											<div class='price'><span> 44 600 руб </span> 39 990 руб</div>
+											<input type="submit" class="button" value="Купить">
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 
+
+
 				</div>
+
 			</section>
 
 		<!--======================================================
@@ -930,6 +1010,7 @@
 			<script src='js/wow.min.js' ></script>
 			<script src='js/validator.min.js' ></script>
 			<script src='js/smooth-scroll.min.js' ></script>
+			<script src="js/selectize.min.js"></script>
 			<script src='js/script.js' ></script>
 		</body>
 		</html>

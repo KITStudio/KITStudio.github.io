@@ -338,7 +338,33 @@ $(function(){
 	if( $('#particles').length != 0 ){
 		particlesJS('particles', particlesSettings);		
 	}
-	
+
+/*******************************************************************/
+$('select').selectize({
+	create: true,
+})
+
+
+function displayVals() {
+  var country = $( "#select-country" ).val();
+ if (country == "Белоруссия"){
+ 	$(".price").html("<span> 15 768500 BYN.</span> 14 138555 BYN.</div>").css("font-size", "2.2rem"); }
+ 	else if (country == "Украина"){
+ 	$(".price").html("<span> 20 685 грн. </span> 18 550 грн.</div>").css("font-size", "2.5rem");
+ } else {
+ 	$(".price").html("<span> 44 600 руб </span> 39 990 руб</div>").css("font-size", "2.5rem");
+ }
+}
+ 
+$( "select" ).change( displayVals );
+//displayVals();
+
+// $('#select-country').change(function(){
+// alert($(this).moneyChange());
+// })
+/*******************************************************************/	
+
+
 });
 
 
@@ -481,3 +507,48 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 /************************************ time left end *********************************/
+
+
+
+
+document.getElementById('range-picker').addEventListener('click', function(e) {
+  var sizeList = document.getElementById('range-picker').children;
+  for (var i = 0; i <= sizeList.length - 1; i++) {
+    console.log(sizeList[i].classList);
+    if (sizeList[i].classList.contains('active')) {
+      sizeList[i].classList.remove('active');
+    }
+  }
+  e.target.classList.add('active');
+})
+
+document.getElementById('color-a').addEventListener('click', function() {
+  document.getElementById('color-overlay').style.transform = 'translateX(-0px)';
+  document.getElementById('color-name').innerHTML = "Silver";
+  document.getElementById('color-input').value = 'Silver';
+  document.getElementById("product-img").style.backgroundImage = "url('./img/iphone/iphone6s-silver.jpg')";
+
+})
+document.getElementById('color-b').addEventListener('click', function() {
+  document.getElementById('color-overlay').style.transform = 'translateX(45px)';
+  document.getElementById('color-name').innerHTML = "Rosegold";
+  document.getElementById('color-input').value = 'Rosegold';
+  document.getElementById("product-img").style.backgroundImage = "url('./img/iphone/iphone-rosegold.jpg')";
+})
+
+document.getElementById('color-c').addEventListener('click', function() {
+  document.getElementById('color-overlay').style.transform = 'translateX(90px)';
+  document.getElementById('color-name').innerHTML = "Gold";
+  document.getElementById('color-input').value = 'Gold';
+  document.getElementById("product-img").style.backgroundImage = "url('./img/iphone/iphone6s-gold.jpg')";
+})
+document.getElementById('color-d').addEventListener('click', function() {
+  document.getElementById('color-overlay').style.transform = 'translateX(134px)';
+  document.getElementById('color-name').innerHTML = "Spacegray";
+  document.getElementById('color-input').value = 'Spacegray';
+  document.getElementById("product-img").style.backgroundImage = "url('./img/iphone/iphone6s-spacegray.jpg')";
+})
+
+
+
+
