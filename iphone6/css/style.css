@@ -1857,6 +1857,7 @@ selectize-control .selectize-input {
 	}
 
 	.highlight-window {
-		width: 320px;
+		height: 400px;
+		width: auto;
 	}
 }
