@@ -1781,7 +1781,7 @@ selectize-control .selectize-input {
     content: '\f107';
     font-family: fontawesome;
     position: absolute;
-    top: 12px;
+    top: 15px;
     right: 25px
 }
 
