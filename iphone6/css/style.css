@@ -1732,6 +1732,10 @@ a:hover {
 	margin-top: 20px;
 }
 
+.product-block {
+	margin-top: 10px;
+}
+
 .selectize-control .selectize-input,
 .selectize-control.single .selectize-input.input-active
  {
@@ -1850,5 +1854,9 @@ selectize-control .selectize-input {
 	}
 	.product-item .button{
 		margin-top: 30px;
+	}
+
+	.highlight-window {
+		width: 320px;
 	}
 }
