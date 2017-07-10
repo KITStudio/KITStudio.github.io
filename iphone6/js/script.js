@@ -348,7 +348,7 @@ $('select').selectize({
 function displayVals() {
   var country = $( "#select-country" ).val();
  if (country == "Белоруссия"){
- 	$(".price").html("<span> 15 768500 BYN.</span> 14 138555 BYN.</div>").css("font-size", "2.2rem"); }
+ 	$(".price").html("<span> 15 768 500 BYN.</span> 14 138 555 BYN.</div>").css("font-size", "2.2rem"); }
  	else if (country == "Украина"){
  	$(".price").html("<span> 20 685 грн. </span> 18 550 грн.</div>").css("font-size", "2.5rem");
  } else {
@@ -357,11 +357,7 @@ function displayVals() {
 }
  
 $( "select" ).change( displayVals );
-//displayVals();
 
-// $('#select-country').change(function(){
-// alert($(this).moneyChange());
-// })
 /*******************************************************************/	
 
 
