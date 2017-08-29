@@ -722,7 +722,7 @@ Features List
 }
 .features-list p {
 	margin-bottom: 20px;
-	color: #778899;
+	color: #5a6371;
 }
 .feature-content {
 	display: inline-block;
@@ -1096,4 +1096,20 @@ Waypoints
 h1 span.top-span{
 	color: #E10808;
 	font-weight: 300;
+}
+
+section.about-us {
+    padding: 60px 0 6%;
+    background-color: #f6f7f9;
+}
+
+section.about-us h1{
+	font-size: 2.5em;
+	color: #E10808;
+	font-weight: 600;
+}
+
+section.about-us p{
+	letter-spacing: 0.5px;
+	color: #5a6371;
 }
