@@ -1860,4 +1860,9 @@ selectize-control .selectize-input {
 		height: 400px;
 		width: auto;
 	}
+
+	.product-block {
+	margin-top: 0px;
+}
+
 }
