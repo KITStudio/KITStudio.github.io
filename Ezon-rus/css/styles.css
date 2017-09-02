@@ -1126,6 +1126,7 @@ section.shop {
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding:70px 0;
+	/* border-bottom: 3px solid #ccc; */
 }
 .shop-item-img-wrap{
 text-align:center;
