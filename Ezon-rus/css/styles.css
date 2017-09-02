@@ -1339,3 +1339,20 @@ margin-right: 25px;
 
 }
 
+
+
+.contacts {
+	padding: 120px 0;
+	background-color: #3f6184;
+	background-color: #424F60;
+}
+.contacts h2 {
+	margin: 0 0 15px 0;
+	color: #fff;
+	font-weight: 400;
+	font-size: 40px;
+}
+.contacts p {
+	color:  #fff;
+	margin: 40px 0;
+}
