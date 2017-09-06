@@ -1424,3 +1424,7 @@ margin-right: 25px;
 .competition-title h2{
 text-align: center;
 }
+
+.competition-content {
+padding: 0 20px;
+}
