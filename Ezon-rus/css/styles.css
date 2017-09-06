@@ -1374,7 +1374,8 @@ margin-right: 25px;
     font-size: 16px
 }
 .competition-item {
-	margin-bottom: 40px;
+	margin-bottom: 7%;
+	overflow: hidden;
 }
 
 .fotorama {
