@@ -1103,18 +1103,18 @@ h1 span.top-span{
 	font-weight: 300;
 }
 
-section.about-us {
-    padding: 7% 0 7%;
+section.about-us,.competition {
+    padding: 6% 0 7%;
     background-color: #f6f7f9;
 }
 
-section.about-us h1{
+section.about-us h1, .competition h2{
 	font-size: 3em;
 	color: #E10808;
 	font-weight: 600;
 }
 
-section.about-us p{
+section.about-us p, .competition p{
 	letter-spacing: 0.5px;
 	color: #5a6371;
 }
@@ -1359,4 +1359,58 @@ margin-right: 25px;
 
 .about-us{
 	text-align: center;
+}
+
+
+/******** section  sorevnovaniya ***********/
+
+.competition h2 {
+ margin: 60px 0;
+}
+.competition p {
+    margin: 50px 0;
+    font-size: 16px
+}
+
+.fotorama {
+    background-color: transparent;
+}
+/* .fotorama__nav-wrap {
+    position: absolute;
+    bottom: 15px;
+    padding: 0 30px;
+    width: 100%
+} */
+.fotorama__thumb {
+    border: 4px rgba(206, 66, 85, 0.35) solid;
+    -webkit-transition: border-color .5s ease;
+    -o-transition: border-color .5s ease;
+    transition: border-color .5s ease
+}
+.fotorama__thumb-border {
+    border-color: #E10808;
+  }
+.fotorama__active .fotorama__thumb {
+    border-color: #E10808;
+}
+.fotorama__arr--next::before,
+.fotorama__arr--prev::before {
+    font-family: fontawesome;
+    font-size: 52px;
+    color: #E10808;
+}
+.fotorama__arr--next::before {
+    content: '\f105'
+}
+.fotorama__arr--prev::before {
+    content: '\f104'
+}
+.fotorama__active .fotorama__thumb {
+    border-color: #E10808;
+}
+.fotorama__nav:after,
+.fotorama__nav:before,
+.fotorama__stage:after,
+.fotorama__stage:before {
+    display: none
 }
