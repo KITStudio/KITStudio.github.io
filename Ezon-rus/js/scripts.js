@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
 	/***************** Waypoints ******************/
 
 	$('.wp1').waypoint(function() {
@@ -60,6 +62,10 @@ $(document).ready(function() {
 	$("a.single_image").fancybox({
 		padding: 4,
 	});
+
+
+
+
 });
 
 /***************** Nav Transformicon ******************/
@@ -97,3 +103,9 @@ $('a[href*=#]:not([href=#])').click(function() {
 		}
 	}
 });
+
+
+
+
+
+

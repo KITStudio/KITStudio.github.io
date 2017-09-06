@@ -1100,7 +1100,8 @@ Waypoints
 /************************** head *************************************/
 h1 span.top-span{
 	color: #E10808;
-	font-weight: 300;
+	font-weight: 600;
+	font-size: 60px;
 }
 
 section.about-us,.competition {
@@ -1394,7 +1395,7 @@ margin-right: 25px;
     font-size: 16px
 }
 .competition-item {
-	margin-bottom: 7%;
+	margin-bottom: 10%;
 	overflow: hidden;
 }
 
@@ -1447,4 +1448,42 @@ text-align: center;
 
 .competition-content {
 padding: 0 20px;
+}
+
+.competition {
+    padding: 6% 0 0;
+}
+/********** knopka naverx **********/
+
+.top {
+    position: fixed;
+    bottom: 25px;
+    right: -100px;
+    background-color: #e0e0e0;
+    z-index: 12;
+    -webkit-border-radius: 10em;
+    border-radius: 10em;
+    color: #E10808;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: .5;
+    z-index: 30000;
+}
+.top i {
+    line-height: 0
+}
+.top:hover {
+    color: #fff;
+    background-color: #E10808;
+    opacity: 1
+}
+.top.active {
+    right: 25px
 }
