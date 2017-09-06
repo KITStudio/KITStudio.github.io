@@ -1223,7 +1223,11 @@ text-align:center;
 
 
 
-/* social icons */
+/************************* social icons ********************/
+
+footer {
+	padding: 100px 0 70px;
+}
 
 .wrapper,.copyright {
 	padding: 20px;
