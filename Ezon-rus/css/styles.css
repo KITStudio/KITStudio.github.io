@@ -1353,6 +1353,7 @@ margin-right: 25px;
 	background-color: #3f6184;
 	background-color: #424F60;
 }
+
 .contacts h2 {
 	margin: 0 0 5% 0;
 	color: #fff;
@@ -1362,6 +1363,9 @@ margin-right: 25px;
 .contacts p {
 	color:  #fff;
 	margin:  0 0 50px;
+}
+.contacts a {
+	margin-bottom: 30px;
 }
 
 .about-us{
@@ -1486,4 +1490,37 @@ padding: 0 20px;
 }
 .top.active {
     right: 25px
+}
+
+
+@media screen and (max-width: 760px) {
+.hero h1 {
+    margin: 200px 0 45px 0;
+    font-weight: 300;
+    font-size: 35px;
+}
+}
+
+@media screen and (max-width: 510px){
+.hero h1.animated {
+    font-size: 27px ;
+    /* margin: 100px 0 45px 0; */
+}
+h1 span.top-span {
+	font-size: 45px;
+}
+.learn-btn, .download-btn {
+	padding: 18px 30px;
+}
+
+.hero a {
+	font-size: 12px;
+}
+}
+
+@media screen and (max-width: 350px){
+.hero h1.animated {
+    font-size: 24px ;
+     margin: 100px 0 45px 0; 
+}
 }
