@@ -1361,6 +1361,12 @@ margin-right: 25px;
 	text-align: center;
 }
 
+.contacts-content p .fa {
+	color: #E10808;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
 .map{
 	/* max-height: 200px; */
 	opacity: .7;
