@@ -1365,11 +1365,16 @@ margin-right: 25px;
 /******** section  sorevnovaniya ***********/
 
 .competition h2 {
- margin: 60px 0;
+ margin: 0 0 7%;
 }
+
+
 .competition p {
     margin: 40px 0;
     font-size: 16px
+}
+.competition-item {
+	margin-bottom: 40px;
 }
 
 .fotorama {
@@ -1413,4 +1418,8 @@ margin-right: 25px;
 .fotorama__stage:after,
 .fotorama__stage:before {
     display: none
+}
+
+.competition-title h2{
+text-align: center;
 }
