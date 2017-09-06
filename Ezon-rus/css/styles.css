@@ -1186,6 +1186,7 @@ text-align:center;
 	letter-spacing: 1px;
 	border: 2px solid rgba(255, 0, 0, 0.55);
     padding: 20px 100px;
+    text-align: center;
 }
 
 .button a i {
@@ -1501,6 +1502,17 @@ padding: 0 20px;
 }
 }
 
+@media screen and (max-width: 640px) {
+.use-btn {
+    display: inherit;
+}
+.social .h2 {
+	top:  5px;
+}
+
+
+}
+
 @media screen and (max-width: 510px){
 .hero h1.animated {
     font-size: 27px ;
@@ -1523,4 +1535,11 @@ h1 span.top-span {
     font-size: 24px ;
      margin: 100px 0 45px 0; 
 }
+
+.button a {
+	font-size: 12px;
 }
+
+}
+
+
