@@ -1359,16 +1359,25 @@ margin-right: 25px;
 	background-color: #3f6184;
 	background-color: #424F60;
 }
-
+.contact-tel{
+	margin-bottom: 8%;
+}
 .contacts h2 {
 	margin: 0 0 5% 0;
 	color: #fff;
 	font-weight: 400;
 	font-size: 40px;
+	font-size: 3em;
+  font-weight: 600;
 }
-.contacts p {
+
+.contact-tel h2 {
+	margin: 0 0 5% 0;
+}
+.contacts p, .contact-tel a {
 	color:  #fff;
 	margin:  0 0 50px;
+	letter-spacing: 2px;
 }
 .contacts a {
 	margin-bottom: 30px;
@@ -1378,12 +1387,19 @@ margin-right: 25px;
 	text-align: center;
 }
 
-.contacts-content p .fa {
+.contacts-content p .fa, .contact-tel a .fa {
 	color: #E10808;
 	font-size: 20px;
 	margin-right: 5px;
 }
 
+.contact-tel a, .contact-tel a .fa{
+	font-size: 30px;
+}
+
+.contact-tel a .fa {
+	font-size: 32px;
+}
 .map{
 	/* max-height: 200px; */
 	opacity: .7;
@@ -1414,8 +1430,10 @@ div.tab button {
     padding: 14px 16px;
     transition: 0.3s;
     color: #fff;
-    font-size: 3em;
-    font-weight: 600;
+    /*font-size: 3em;
+    font-weight: 600;*/
+    font-weight: 400;
+	font-size: 40px;
 }
 
 /* Change background color of buttons on hover */
@@ -1443,8 +1461,10 @@ div.tab button.active {
 }
 .contacts span{
 	color: #fff;
-    font-size: 3em;
-    font-weight: 600;
+    /*font-size: 3em;
+    font-weight: 600;*/
+    font-weight: 400;
+	font-size: 40px;
     padding: 0 30px;
 }
 
