@@ -1355,7 +1355,7 @@ margin-right: 25px;
 
 /**************** contacts ********************/
 .contacts {
-	padding: 5% 0;
+	padding: 7% 0 5%;
 	background-color: #3f6184;
 	background-color: #424F60;
 }
@@ -1391,6 +1391,61 @@ margin-right: 25px;
 
 .map:hover {
 	opacity: 1;
+}
+
+
+
+/***************************Contacts TABS **********************************/
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    /*background-color: #f1f1f1;*/
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    /*float: left;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #E10808;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 4% 0 4% ;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+}
+
+.content-wrap {
+	text-align: left;
+	overflow: hidden;
+	margin-top: 3%;
+}
+.contacts span{
+	color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+    padding: 0 30px;
 }
 
 /******** section  sorevnovaniya ***********/
@@ -1536,58 +1591,7 @@ padding: 0 20px;
 	opacity: 1;
 }
 
-/*************************** TABS **********************************/
 
-/* Style the tab */
-div.tab {
-    overflow: hidden;
-    /*border: 1px solid #ccc;*/
-    /*background-color: #f1f1f1;*/
-}
-
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
-    /*float: left;*/
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    color: #fff;
-    font-size: 3em;
-    font-weight: 600;
-}
-
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #E10808;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 4% 0 4% ;
-    /*border: 1px solid #ccc;*/
-    border-top: none;
-}
-
-.content-wrap {
-	text-align: left;
-	overflow: hidden;
-	margin-top: 3%;
-}
-.contacts span{
-	color: #fff;
-    font-size: 3em;
-    font-weight: 600;
-    padding: 0 30px;
-}
 
 /********************************************* media ******************************************************************/
 @media screen and (max-width: 760px) {
