@@ -1202,6 +1202,7 @@ text-align:center;
 
 .shop-item-content {
 	margin-top: 0%;
+	overflow: hidden;
 }
 
 .price p{
@@ -1629,7 +1630,7 @@ padding: 0 20px;
 
 @media screen and (max-width: 640px) {
 .use-btn {
-    display: inherit;
+    display: inherit !important;
 }
 .social .h2 {
 	top:  5px;
