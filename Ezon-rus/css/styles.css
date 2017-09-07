@@ -1498,7 +1498,45 @@ padding: 0 20px;
     right: 25px
 }
 
+/***************************************** vide obzor ********************************************************/
+.video-obzor {
+	text-align: center;
+	padding: 4% 0 7%;
+	background-color: #f6f7f9;
+}
 
+.video-obzor h2{
+	font-size: 3em;
+    color: #E10808;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.fotorama__wrap {
+	margin: auto;
+	
+}
+
+.fotorama__stage {
+	/*border: 3px solid rgba(255, 0, 0, 0.22);*/
+}
+
+.fotorama__video-play {
+ background-image: url(../img/play-button.png);
+ width: 103px;
+ height: 103px;
+ background-position: 0 0;
+	
+}
+
+.fotorama__error .fotorama__video-play, .fotorama__loaded .fotorama__video-play, .fotorama__nav__frame .fotorama__video-play {
+	opacity: .5;
+}
+
+.fotorama__error .fotorama__video-play:hover, .fotorama__loaded .fotorama__video-play:hover, .fotorama__nav__frame .fotorama__video-play:hover {
+	opacity: 1;
+}
+
+/********************************************* media ******************************************************************/
 @media screen and (max-width: 760px) {
 .hero h1 {
     margin: 200px 0 45px 0;
