@@ -1,0 +1,90 @@
+.btn {
+	border-radius: 4px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #24AAE6;
+    border-color: #24AAE6;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    color: #fff;
+    background-color: #1d93c7;
+    border-color: #1d93c7;
+}
+
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background-color: #fff;
+}
+
+
+.navbar-default .navbar-brand {
+	color: #116480;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #116480;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #96CDEE;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+     border:none; 
+
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background-color: transparent;
+	color: #96CDEE;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #96CDEE;
+    background-color: transparent;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #3EB0E8;
+	border-bottom: #3EB0E8 solid 3px ;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: #3EB0E8;
+    background-color: transparent;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: transparent;
+}
+
+
+.progress-bar-info {
+    background-color: #24AAE6;
+}
+
+
+.form-control {
+	border-radius: 2px;
+}
+
+.well {
+	background-color: #fff;
+}
+
+input[type="chekbox"] {
+	background-color: #fff;
+	color: #fff;
+}

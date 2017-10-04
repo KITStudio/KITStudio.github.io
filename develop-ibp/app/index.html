@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+<header>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-10 col-sm-8 col-xs-8">
+
+					<div class="navbar-header">
+						
+						<button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#heaader-menu" aria-expanded="false">
+							<span class="menu-text">Меню</span>
+							<span class="menu-toogle">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="img/logo-header.jpg" alt="Logo"></a>
+					</div>
+
+
+					<div class="collapse navbar-collapse" id="heaader-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Компания <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">Online продажи</a></li>
+							<li><a href="#">Продукты</a></li>
+							<li><a href="#">Пресс-секция</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+
+				<div class="col-md-2 col-sm-4 col-xs-4">
+					<div class="nav navbar-nav navbar-right">
+						<a href="#" class="btn btn-primary">Войти</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- <a href="#" class="btn btn-primary">Войти</a> -->
+</nav>
+
+</header>
+
+<section class="regions">
+
+	<div class="container">
+
+
+		<form action="#" class="region-form">
+
+			<div class="row">
+				<div class="col-lg-6 col-md-5">
+
+					<div class="region">
+
+						<div class="region-name">
+							<h2>Москва</h2>
+							<a href="#">Выбрать другой регион</a>
+						</div>
+
+						<div class="region-checkbox">
+
+							<span>
+								<input type="checkbox" id="test1" />
+								<label for="test1">Широкоформатная реклама</label>
+							</span>
+							<span>
+								<input type="checkbox" id="test2"  />
+								<label for="test2">Стандарт</label>
+							</span>
+							<span>
+								<input type="checkbox" id="test3"  />
+								<label for="test3">Стандарт +</label>
+							</span>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-lg-6 col-md-7">
+					<div class="region-selects">
+						<div class="region-select-item">
+							<label for="select" class="control-label">Показов в сутки:</label>
+							<select class="form-control" id="select" >
+								<option>480</option>
+								<option>670</option>
+								<option>800</option>
+								<option>900</option>
+								<option>1500</option>
+							</select>
+						</div>
+						<div class="region-select-item">
+							<label for="select" class="control-label">Дата начала:</label>
+							<select class="form-control" id="select-date-begin" >
+								<option>20 сентября 2017</option>
+							</select>
+						</div>
+						<div class="region-select-item">
+							<label for="select" class="control-label" >Дата окончания:</label>
+							<select class="form-control" id="select-date-end" >
+								<option>20 октября 2017</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="tabs-block">
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#price" data-toggle="tab">Цена за неделю показа</a></li>
+							<li><a href="#location" data-toggle="tab">Локация</a></li>
+							<li><a href="#fuel" data-toggle="tab">Наличие топлива на АЗС</a></li>
+							<li><a href="#profile" data-toggle="tab">Услуги заправки</a></li>
+							<li><a href="#traffic" data-toggle="tab">Уровен трафика</a></li>
+							<li><a href="#gender" data-toggle="tab">Гендер</a></li>
+							<li><a href="#consumption" data-toggle="tab">Уровен потребления</a></li>
+
+						</ul>
+						<div id="myTabContent" class="tab-content">
+
+							<div class="tab-pane fade active in" id="price">
+								<label >От</label>
+								<input type="text" class="left-input">
+								<div class="nstSlider-wrapper">
+									<div class="nstSlider" data-aria_enabled="true"
+									data-range_min="0" data-range_max="200000000" data-cur_min="150000" data-cur_max="150000000">
+									<div class="bar"></div>
+									<div class="leftGrip"></div>
+									<div class="rightGrip"></div>
+								</div>
+							</div>
+							<label >До</label>
+							<input type="text" class="right-input">
+
+
+						</div>
+
+						<div class="tab-pane fade" id="location">
+							<p>location</p>
+						</div>
+
+						<div class="tab-pane fade" id="fuel">
+							<p>fuel</p>
+						</div>
+
+						<div class="tab-pane fade" id="services">
+							<p>services</p>
+						</div>
+
+						<div class="tab-pane fade" id="traffic">
+							<p>traffiv</p>
+						</div>
+
+						<div class="tab-pane fade" id="gender">
+							<p> gender </p>
+						</div>
+
+						<div class="tab-pane fade" id="consumption">
+							<p> consumption </p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="filters">
+			<div class="row">
+				<div class="col-lg-9 col-md-8">
+					<div class="filters-element-wrapper">
+						<div class="filters-element"><p>От 150 000 руб.<span>до 150 000 000 руб.</span> </p><button>x</button></div>
+						<div class="filters-element"><p>Москва </p><button>x</button></div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="clear-filters-wrapper">
+						<button class="clear-filters">Очистить все фильтры</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="sorting-wrapper">
+			<div class="row">
+
+			<div class="col-md-4 col-sm-4 col-md-push-8 col-sm-push-8">
+					<div class="find-elements">
+						<p>Найдено 198 обектов</p>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-sm-8 col-md-pull-4 col-sm-pull-4">
+					<div class="sorting">
+						<span>Сортировать по:</span>
+						<select class="form-control" >
+							<option >Цена за неделю показа</option>
+							<option >Цена за месяц показа</option>
+							<option >Цена за год показа</option>
+						</select>
+						<select class="form-control">
+							<option >По возрастанию</option>
+							<option >По убыванию</option>
+
+						</select>
+					</div>
+
+				</div>
+
+				
+			</div>
+		</div>
+
+		
+		<div class="list-block">
+			<div class="row equal">
+
+
+				<div class="col-md-12">
+
+					<div class="col-md-6 col-sm-12 col-xs-12 ">
+						<div class="objects-wrap">
+							<div class="objects">
+								<h3>Выберите обект</h3>
+								<span>
+									<input type="checkbox" id="check-all" />
+									<label for="check-all">Выбрать все обекты</label>
+								</span>
+							</div>
+							<div class="price-for-week">
+								Цена за неделю показа
+							</div>
+						</div>
+
+						<div class="list-item-elements-wrapper">
+
+							<div class="list-item-active" >
+
+								<div class="col-md-10 col-sm-10 col-xs-10">
+
+
+									<div class="city-desc">
+										<input type="checkbox" id="city-1">
+										<label for="city-1">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернандского(призмавижн),(светафор)</label>
+									</div>
+
+
+
+									<div class="item-active-desc">
+
+										<div class="desc-row">
+											<div class="row">
+												<div class="col-md-6 col-sm-6">
+													<p>Формат</p>
+												</div>
+												<div class="col-md-6 col-sm-6">
+													Широкоформатная
+												</div>
+											</div>
+										</div>
+
+										<div class="desc-row">
+											<div class="row">
+												<div class="col-md-6 col-sm-6">
+													<p>Локация</p>
+												</div>
+												<div class="col-md-6 col-sm-6">
+													Город
+												</div>
+											</div>
+										</div>
+
+										<div class="desc-row">
+											<div class="row">
+												<div class="col-md-6 col-sm-6">
+													<p>Уровень потребления</p>
+												</div>
+												<div class="col-md-6 col-sm-6">
+													Да
+												</div>
+											</div>
+										</div>
+
+										<div class="desc-row">
+											<div class="row">
+												<div class="col-md-6 col-sm-6">
+													<p>Наличие топлива</p>
+												</div>
+												<div class="col-md-6 col-sm-6">
+													98-G 95-G 95 92 D-G Газ
+												</div>
+											</div>
+										</div>
+
+
+										<div class="desc-row">
+											<div class="row">
+												<div class="col-md-6 col-sm-6">
+													<p>гендерный признак</p>
+												</div>
+												<div class="col-md-6 col-sm-6">
+													М Ж
+												</div>
+											</div>
+										</div>
+
+										<div class="traffic">
+
+											<h3>Специальный трафик:</h3>
+											<div class="desc-row">
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<p>Наличие топлива</p>
+													</div>
+													<div class="col-md-6 col-sm-6">
+														98-G 95-G 95 92 D-G Газ
+													</div>
+												</div>
+											</div>
+
+
+											<div class="desc-row">
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<p>гендерный признак</p>
+													</div>
+													<div class="col-md-6 col-sm-6">
+														М Ж
+													</div>
+												</div>
+											</div>
+
+											<div class="desc-img">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-4">
+														<div class="img-wrap"><img src="img/37.jpg" alt=""></div>
+													</div>
+													<div class="col-md-4 col-sm-4 col-xs-4">
+														<div class="img-wrap"><img src="img/BlankBillboard.jpg" alt=""></div>
+													</div>
+													<div class="col-md-4 col-sm-4 col-xs-4">
+														<div class="img-wrap"><img src="img/depositphotos.jpg" alt=""></div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+
+								</div>
+
+
+								<div class="col-md-2 col-sm-2 col-xs-2">
+									<div class="price">
+										<b>999 000</b> руб.
+									</div>
+								</div>
+
+
+							</div>
+
+							<div class="list-item" >
+
+								<div class="col-md-10">
+									<div class="city-desc">
+										<input type="checkbox" id="city-1" />
+										<label for="city-1">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернандского(призмавижн),(светафор)</label>
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									<div class="price">
+										<b>999 000</b> руб.
+									</div>
+								</div>
+
+
+							</div>
+
+							<div class="list-item" >
+
+								<div class="col-md-10">
+									<div class="city-desc">
+										<input type="checkbox" id="city-1" />
+										<label for="city-1">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернандского(призмавижн),(светафор)</label>
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									<div class="price">
+										<b>999 000</b> руб.
+									</div>
+								</div>
+
+
+							</div>
+
+
+							<div class="list-item" >
+
+								<div class="col-md-10">
+									<div class="city-desc">
+										<input type="checkbox" id="city-1" />
+										<label for="city-1">Москва, Бакинских Комиссаров ул. 11, 250 м. после Х с пр-том Вернандского(призмавижн),(светафор)</label>
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									<div class="price">
+										<b>999 000</b> руб.
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div class="col-md-6 col-sm-12 col-xs-12 ">
+						<div class="map" style="background-image: url(img/moskva.jpg);">
+						</div>
+					</div>
+
+				<!-- </div> -->
+
+
+			</div>
+		</div>
+
+
+		<div class="ordering-block">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<h4>Ваш заказ</h4>
+						<p>Выбрано обектов: 0</p>
+						<p>Сумма: 0 руб.</p>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<div class="button-wrapper">
+							<a href="#" class="btn btn-default">Расчитать рекламную<br> кампанию</a>
+							<a href="#" class="btn btn-primary">Сформировать заказ </a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</form>
+
+</div>
+
+
+</section>
+
+<footer>
+	<div class="footer-nav">
+		
+<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="row">
+
+
+					<div class="navbar-header">
+						
+						
+						<a class="navbar-brand" href="#"><img src="img/foote-logor.jpg" alt="Logo"></a>
+					</div>
+
+
+					
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Компания <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">Online продажи</a></li>
+							<li><a href="#">Продукты</a></li>
+							<li><a href="#">Пресс-секция</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+				
+
+				</div>
+
+
+				
+
+
+	</div>
+	<!-- <a href="#" class="btn btn-primary">Войти</a> -->
+</nav>
+
+	</div>
+	<div class="social">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+		</div>
+		<div class="copy">
+			&copy; 2017 Все права защищены
+		</div>
+		<div class="social-icons">
+			<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		</div>
+					</div>
+	</div>
+	</div>
+</footer>
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
