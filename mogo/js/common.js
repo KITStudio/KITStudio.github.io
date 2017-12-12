@@ -61,13 +61,13 @@ autoplaySpeed: 1000,
 
 var owl = $('.owl-carousel');
 owl.owlCarousel();
-// Listen to owl events:
+
 owl.on('translated.owl.carousel', function(event) {
   $(".hash-item").removeClass("active");
   $(".hash-item a").removeClass("active");
   var a = $(".owl-item.active> .main-header-content").attr("data-hash");
   $('.hash-item a[href="#'+a+'"]').toggleClass("active").parent().toggleClass("active");
-})
+});
 
 
 var searchClosed = true;
@@ -103,7 +103,9 @@ $(".blue-item span").each(function() {
 }); this.destroy();
 }, {
 		offset: '40%'
-})
+});
+
+
 
 });
 
