@@ -13,6 +13,28 @@
 	.top-line .menu li
 		padding-left: 30px
 
+	.testimonials-block
+		.testimonal
+			.testimonal-item
+				.icon-wrap
+				.testimonal-content
+					// font-size: 18px
+					max-width: 70%
+	.section-team
+		.team-wrapper
+			.team-item
+				.team-img-wrapper
+					.team-img
+						height: 350px
+	
+	.partners-block
+		.partners-wrapper
+			grid-template-columns: repeat(6, 1fr)
+			grid-gap: 10px
+			.partner
+				width: 110px
+				height: 110px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	#header-search
@@ -45,15 +67,41 @@
 	.div-blue
 		.blue-item-wrapper
 			.blue-item
-				font-size: 12px
+				font-size: 15px
 				padding: 50px 0
 				span
-					font-size: 40px
-					line-height: 40px
+					font-size: 50px
+					line-height: 50px
 					margin-bottom: 20px
 
+	.section-doing
+		.doing-items-wrapper
+			grid-template-columns: 1fr
 
+	.testimonials-block
+		.testimonal
+			.testimonal-item
+				.icon-wrap
+					width: 100px
+					height: 100px
+					font-size: 50px
+				.testimonal-content
+					font-size: 18px
+					max-width: 70%
 
+	.section-team
+		.team-wrapper
+			.team-item
+				.team-img-wrapper
+					.team-img
+						height: 300px
+						.team-social
+							a
+								width: 40px
+								height: 40px
+								i
+									font-size: 20px
+									line-height: 40px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.about-wrapper
@@ -85,12 +133,12 @@
 	.div-blue
 		.blue-item-wrapper
 			.blue-item
-				font-size: 10px
+				font-size: 14px
 				padding: 40px 0
 				font-weight: bold
 				span
-					font-size: 30px
-					line-height: 30px
+					font-size: 40px
+					line-height: 40px
 					margin-bottom: 10px
 	.section-services
 		hr
@@ -106,6 +154,52 @@
 			.mobile-phone
 				width: 35%
 				bottom: -70px
+
+	.testimonials-block
+		.testimonal
+			.owl-nav
+				.owl-next
+					top: 40%
+				.owl-prev
+					top: 40%
+			.testimonal-item
+				padding: 0 0
+				.icon-wrap
+					float: none
+					display: block
+					margin: auto
+					margin-bottom: 30px
+				.testimonal-content
+					float: none
+					width: 100%
+					margin: auto
+					display: block
+					text-align: center
+
+	.section-team
+		.team-wrapper
+			grid-template-columns:  1fr
+			.team-item
+				.team-img-wrapper
+					.team-img
+						height: 450px
+						background-position: top
+						.team-social
+							a
+								width: 50px
+								height: 50px
+								i
+									font-size: 25px
+									line-height: 50px
+
+	.partners-block
+		.partners-wrapper
+			grid-template-columns: repeat(3, 1fr)
+			grid-gap: 10px
+			.partner
+				width: 120px
+				height: 120px
+				margin-bottom: 30px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -123,7 +217,32 @@
 			.mobile-phone
 				width: 40%
 				bottom: -50px
+	.div-blue
+		.blue-item-wrapper
+			.blue-item
+				font-size: 10px
+				padding: 20px 2px
+				font-weight: bold
+				span
+					font-size: 25px
+					line-height: 25px
+					margin-bottom: 10px
 
+	.testimonials-block
+		.testimonal
+			.testimonal-item
+				padding: 0 0
+				.testimonal-content
+					font-size: 15px
+
+	.partners-block
+		.partners-wrapper
+			grid-template-columns: repeat(3, 1fr)
+			grid-gap: 5px
+			.partner
+				width: 90px
+				height: 90px
+				margin-bottom: 30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

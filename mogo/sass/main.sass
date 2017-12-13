@@ -177,7 +177,21 @@ body
 		&::after
 			opacity: .32
 
-.owl-carousel
+.item-overlay
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: #fce38a
+		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%)
+		opacity: 0
+		transition: opacity .5s ease-out
+
+.header.owl-carousel
 	position: absolute
 	top: 50%
 	left: 0
@@ -620,7 +634,7 @@ input, textarea
 					margin-bottom: 5px
 			&:hover
 				transform: translate(-12.5px, -12.5px)
-				transition: all .3s ease-out
+				transition: transform .3s ease-out
 				&::before
 					opacity: .9
 				.item-overlay
@@ -631,18 +645,9 @@ input, textarea
 					&:hover
 						// color: $active
 						transform: scale(1.15)
-.item-overlay
-	&::before
-		content: ''
-		position: absolute
-		left: 0
-		right: 0
-		top: 0
-		bottom: 0
-		background-color: #fce38a
-		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%)
-		opacity: 0
-		transition: opacity .5s ease-out
+
+
+
 
 
 .div-blue
@@ -758,10 +763,243 @@ input, textarea
 	.doing-items-wrapper
 		grid-template-columns: 1fr 1fr
 		grid-gap: 20px
+	.acordion-wrapper
+		.acc-item
+			margin-bottom: 10px
+			.item-header
+				position: relative
+				color: #333
+				font-family: montserrat-mogo, sans-serif
+				font-size: 14px
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 1px
+				border: 1px solid #e5e5e5
+				padding: 15px 0
+				vertical-align: middle
+				cursor: pointer
+				i
+					font-size: 30px
+					color: $blue
+					line-height: 30px
+					vertical-align: middle
+					padding: 0 15px
+				&::after
+					content: "\f107"
+					font-family: 'Font Awesome 5 Free'
+					font-weight: 900
+					right: 20px
+					top: 20px
+					position: absolute
+					font-size: 25px
+					line-height: 25px
+					color: $blue
+			.item-content
+				color: #999
+				font-family: roboto-mogo, sans-serif
+				font-size: 15px
+				font-style: italic
+				line-height: 24px
+				border: 1px solid #e5e5e5
+				display: none
+				padding: 15px
+				border-top: none
+				height: 165px
+			.seen
+				display: inline-block
+			.open::after
+				content: '\f106'
 
 
 
+.mCS-dark
+	&.mCSB_scrollTools
+		.mCSB_buttonRight
+			background-position: -80px -56px
+		.mCSB_draggerRail
+			background-color: #000 !important
+			background-color: rgba(0,0,0,0.15) !important
+		.mCSB_buttonUp
+			background-position: -80px 0
+		.mCSB_buttonDown
+			background-position: -80px -20px
+		.mCSB_dragger
+			.mCSB_dragger_bar
+				background-color: $blue !important
+				background-color: rgba($blue,0.75) !important
+			&:hover
+				.mCSB_dragger_bar
+					background-color: rgba($blue,0.85) !important
+		.mCSB_buttonLeft
+			background-position: -80px -40px
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
+	background-color: rgba($blue,0.9) !important
 
 /*********************************************/
 
+
+/******************** section testimonals ******************/
+
+.testimonials-block
+	margin: 50px 0
+	padding: 60px 0
+	.testimonal
+		margin: auto
+		position: relative
+		.owl-nav
+			font-size: 25px
+			color: #ccc
+			.owl-next
+				position: absolute
+				right: 0px
+				top: 60px
+				transition: transform .3s ease
+				&:hover
+					color: $blue
+					transform: scale(1.5)
+				&::before
+					content: "\f105"
+					font-family: 'Font Awesome 5 Free'
+					font-weight: 900
+			.owl-prev
+				position: absolute
+				left: 0px
+				top: 60px
+				transition: transform .3s ease
+				&:hover
+					color: $blue
+					transform: scale(1.5)
+				&::before
+					content: "\f104"
+					font-family: 'Font Awesome 5 Free'
+					font-weight: 900
+		.testimonal-item
+			padding: 0 6%
+			overflow: hidden
+			.icon-wrap
+				color: $blue
+				border: 3px solid $blue
+				float: left
+				width: 145px
+				height: 145px
+				margin-right: 6%
+				margin-top: 10px
+				font-size: 80px
+				text-align: center
+				display: inline-block
+				margin-left: 10px
+			.testimonal-content
+				color: #999
+				font-family: roboto-mogo, sans-serif
+				font-size: 24px
+				font-weight: 300
+				font-style: italic
+				line-height: 36px
+				display: inline-block
+				max-width: 77%
+				float: left
+				p
+					margin: 0 0 15px
+					padding-bottom: 0
+				.name-wrap
+					color: #333
+					font-family: "kaushan-script", sans-serif
+					font-size: 24px
+					font-weight: 400
+					span
+						display: inline-block
+						width: 60px
+						height: 3px
+						background-color: $accent
+						vertical-align: middle
+						margin-right: 10px
+
+/******************************************/
+
+/************* section team ************/
+.section-team
+	.team-wrapper
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 30px
+		.team-item
+			// position: relative
+			.team-content
+				margin-top: 30px
+				text-align: center
+				color: #333
+				font-family: montserrat-mogo, sans-serif
+				font-size: 14px
+				font-weight: 400
+				text-transform: uppercase
+				span
+					display: block
+					color: #999
+					font-family: roboto-mogo, sans-serif
+					font-size: 15px
+					font-weight: 300
+					font-style: italic
+					line-height: 24px
+			.team-img-wrapper
+				background-color: $blue
+				.team-img
+					height: 470px
+					width: auto
+					background-size: cover
+					background-position: center
+					position: relative
+					&:hover
+						transform: translate(-12.5px, -12.5px)
+						transition: transform .3s ease-out
+						&::before
+							opacity: .9
+						.item-overlay
+							opacity: .9
+						.team-social
+							opacity: 1
+							a
+								&:hover
+									 color: #fff
+									 background-color: $accent
+									 transition: all .3s ease-in-out
+
+					.team-social
+						opacity: 0
+						position: relative
+						margin: auto
+						a
+							color: $accent
+							background-color: $active
+							text-align: center
+							display: inline-block
+							width: 55px
+							height: 55px
+							vertical-align: middle
+							margin: 0
+							padding: 0
+							i
+								font-size: 25px
+								line-height: 55px
+
+.partners-block
+	margin-top: 6.5%
+	.partners-wrapper
+		margin: 70px 0
+		grid-template-columns: repeat(6, 1fr)
+		grid-gap: 55px
+		.partner
+			width: 130px
+			height: 130px
+			margin: auto
+			img
+				width: 100%
+				height: auto
+
+/****************************************/
+
+#my-footer
+	margin-top: 400px
+	background-color: #000
+	height: 100px
 @import "media" // Всегда в конце

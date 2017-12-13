@@ -45,7 +45,7 @@ api.bind('close:finish', function(){
 
 
 
-$(".owl-carousel").owlCarousel({
+$(".header.owl-carousel").owlCarousel({
   loop: true,
   items:1,
   center:true,
@@ -59,7 +59,7 @@ smartSpeed: 700,
 autoplaySpeed: 1000,
 });
 
-var owl = $('.owl-carousel');
+var owl = $('.header.owl-carousel');
 owl.owlCarousel();
 
 owl.on('translated.owl.carousel', function(event) {
@@ -105,7 +105,33 @@ $(".blue-item span").each(function() {
 		offset: '40%'
 });
 
+$('.item-header').click(function(event){
+	$(this).next().slideToggle();
+	$(this).removeClass('seen').toggleClass('open');
+});
 
+
+$(".item-content").mCustomScrollbar({
+	theme: "dark"
+});
+
+
+$(".testimonal.owl-carousel").owlCarousel({
+	items: 1,
+	loop:true,
+	lazyLoad:true,
+	nav: true,
+	navText: "",
+	dots: false,
+	loop: true,
+	// autoplay: true,
+	autoplayTimeout: 10000,
+	autoplayHoverPause: true,
+	smartSpeed:  700,
+	fluidSpeed: 700,
+	autoplaySpeed: 700,
+	navSpeed: 700,
+});
 
 });
 
