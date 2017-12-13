@@ -35,6 +35,23 @@
 				width: 110px
 				height: 110px
 
+	.section-works
+		.works-masonry
+			margin-top: 20px
+			grid-template-columns: repeat(4, 1fr)
+			grid-gap: 0
+			grid-template-rows: repeat(2, 300px)
+
+	.works-testimonal
+		margin-top: 80px
+		.testimonal-item
+			.img-wrap
+				width: 180px
+				height: 180px
+				margin-right: 10px
+
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	#header-search
@@ -102,6 +119,41 @@
 								i
 									font-size: 20px
 									line-height: 40px
+	.section-works
+		.works-masonry
+			margin-top: 20px
+			grid-template-columns: repeat(3, 1fr)
+			grid-gap: 0px
+			grid-template-rows: repeat(3, 300px)
+	.masonry-item
+		&:nth-child(3)
+			grid-column: initial
+			grid-row: initial
+
+	.masonry-item
+		&:nth-child(2)
+			grid-column: 2/4
+			grid-row: 1
+		&:nth-child(3)
+			grid-column: 1/3
+			grid-row: 2
+
+	.works-testimonal
+		.testimonal
+			.testimonal-item
+				.img-wrap
+					width: 150px
+					height: 150px
+					font-size: 50px
+				.testimonal-content
+					font-size: 18px
+					max-width: 70%
+					margin-top: 0
+			.owl-nav 
+			.owl-prev, .owl-next
+				top: 50px
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.about-wrapper
@@ -201,6 +253,45 @@
 				height: 120px
 				margin-bottom: 30px
 
+	.section-works
+		.works-masonry
+			margin-top: 20px
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 0px
+			grid-template-rows: repeat(4, 250px)
+
+	.masonry-item
+		&:nth-child(2)
+			grid-column: initial
+			grid-row: initial
+		&:nth-child(3)
+			grid-column: initial
+			grid-row: initial
+		&:nth-child(5)
+			grid-column: 1/3
+
+	.works-testimonal
+		.testimonal
+			.owl-nav
+				.owl-next
+					top: 40%
+				.owl-prev
+					top: 40%
+			.testimonal-item
+				padding: 0 0
+				.img-wrap
+					float: none
+					display: block
+					margin: auto
+					margin-bottom: 30px
+				.testimonal-content
+					float: none
+					width: 100%
+					margin: auto
+					display: block
+					text-align: center
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.hash-item
@@ -243,6 +334,17 @@
 				width: 90px
 				height: 90px
 				margin-bottom: 30px
+
+	.section-works
+		.works-masonry
+			margin-top: 20px
+			grid-template-columns:  1fr
+			grid-gap: 0px
+			grid-template-rows: repeat(8, 300px)
+
+	.masonry-item
+		&:nth-child(5)
+			grid-column: initial
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
