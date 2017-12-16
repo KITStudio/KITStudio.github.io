@@ -823,30 +823,22 @@ input, textarea
 		&:hover
 			transform: scale(1.1) translateY(-17px)
 
-.mCS-dark
+
+.mCS-my-theme
 	&.mCSB_scrollTools
-		.mCSB_buttonRight
-			background-position: -80px -56px
-		.mCSB_draggerRail
-			background-color: #000 !important
-			background-color: rgba(0,0,0,0.15) !important
-		.mCSB_buttonUp
-			background-position: -80px 0
-		.mCSB_buttonDown
-			background-position: -80px -20px
 		.mCSB_dragger
 			.mCSB_dragger_bar
-				background-color: $blue !important
-				background-color: rgba($blue,0.75) !important
-			&:hover
-				.mCSB_dragger_bar
-					background-color: rgba($blue,0.85) !important
-		.mCSB_buttonLeft
-			background-position: -80px -40px
+				background-color: #95E1D3 !important
 
-.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
-	background-color: rgba($blue,0.9) !important
+.mCS-my-theme
+	&.mCSB_scrollTools
+		.mCSB_draggerRail
+			background-color: #f5f5f5 !important
+
+
+
+
+
 
 /*********************************************/
 
@@ -901,6 +893,9 @@ input, textarea
 		text-align: center
 		display: inline-block
 		margin-left: 10px
+		&:hover
+			color: $active
+			border: 3px solid $active
 	.testimonal-content
 		color: #999
 		font-family: roboto-mogo, sans-serif
@@ -1274,10 +1269,85 @@ input, textarea
 			background-color: $active
 
 
+/******* section map ****/
+
+
+.section-map
+	margin-top: 110px
+	position: relative
+	
+
+.map-wrapper
+	position: relative
+	height: 250px
+	width: 100%
+	transition: all .5s ease-in-out
+	&::before
+		content: ''
+		background-color: #fff
+		opacity: .7
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 10000
+		transition: all 1s ease
+	
+
+#map-content
+	position: absolute
+	bottom: 50%
+	left: 50%
+	transform: translate(-50%, 50%)
+	font-size: 50px
+	z-index: 3000000
+	cursor: pointer
+	color: $accent
+	font-family: montserrat-mogo, sans-serif
+	font-size: 24px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	padding-bottom: 20px
+	transition: all 1s ease-in-out
+	&::after
+		transition: background-color 1s ease
+	&:hover
+		color: darken($accent, 20%)
+		&::after
+			background-color: darken($accent, 20%)
+	span
+		display: block
+		font-size: 30px
+
+#map-content.content-top
+	transition: all 1s ease
+	top: inline
+	bottom: -50px
+	span
+		display: block
+
+#map
+	height: 100%
+	width: 100%
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	// transition: all .8s ease-in-out
+
+.map-wrapper.wrapper-open
+	height: 60vh
+	transition: all 1s ease
+	&::before
+		display: none
+
 /**************************************/
 
 #my-footer
-	margin-top: 400px
+	margin-top: 1000px
 	background-color: #000
 	height: 100px
 @import "media" // Всегда в конце

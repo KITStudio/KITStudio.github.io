@@ -588,76 +588,111 @@
 				<div class="container">
 					<h3 class="h3 after"><span>Our stories</span>Latest blogs</h3>
 					<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, consectetur veritatis ipsum, odit ad minima, asperiores quidem voluptatem error expedita blanditiis, soluta fugiat iste. Voluptatum ab est vel quo odio.</p>
-				
-				<div class="blog-item-wrapper grid">
-					
-					<div class="blog-item">
-						<div class="blog-first-container">
-						<div class="blog-img-wrapper">
-							<div class="blog-img" style="background-image:url(img/blogs/blog-3.jpeg)"></div>
-						</div>
-						<div class="blog-date"> <span>15</span> jan </div>
-					</div>
-						<div class="blog-content">
-							<a href="#">
-							<span class="h4">Lorem ipsum dolor sit amet</span>
-							<span class="p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-						</a>
-							<p class="views"><i class="fas fa-eye"></i> 542 <span><i class="fas fa-comment-alt"></i> 17</span></p>
-						</div>
-					</div>
 
-					<div class="blog-item">
-						<div class="blog-first-container">
-						<div class="blog-img-wrapper">
-							<div class="blog-img" style="background-image:url(img/blogs/blog-2.jpeg)"></div>
-						</div>
-						<div class="blog-date"> <span>10</span> jan </div>
-					</div>
-						<div class="blog-content">
-							<a href="#">
-							<span class="h4">Lorem ipsum dolor sit amet</span>
-							<span class="p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-						</a>
-							<p class="views"><i class="fas fa-eye"></i> 976 <span><i class="fas fa-comment-alt"></i> 53</span></p>
-						</div>
-					</div>
+					<div class="blog-item-wrapper grid">
 
-					<div class="blog-item">
-						<div class="blog-first-container">
-						<div class="blog-img-wrapper">
-							<div class="blog-img" style="background-image:url(img/blogs/blog-1.jpeg)"></div>
+						<div class="blog-item">
+							<div class="blog-first-container">
+								<div class="blog-img-wrapper">
+									<div class="blog-img" style="background-image:url(img/blogs/blog-3.jpeg)"></div>
+								</div>
+								<div class="blog-date"> <span>15</span> jan </div>
+							</div>
+							<div class="blog-content">
+								<a href="#">
+									<span class="h4">Lorem ipsum dolor sit amet</span>
+									<span class="p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+								</a>
+								<p class="views"><i class="fas fa-eye"></i> 542 <span><i class="fas fa-comment-alt"></i> 17</span></p>
+							</div>
 						</div>
-						<div class="blog-date"> <span>8</span> jan </div>
-					</div>
-						<div class="blog-content">
-							<a href="#">
-							<span class="h4">Lorem ipsum dolor sit amet</span>
-							<span class="p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-						</a>
-							<p class="views"><i class="fas fa-eye"></i> 1640 <span><i class="fas fa-comment-alt"></i> 870</span></p>
+
+						<div class="blog-item">
+							<div class="blog-first-container">
+								<div class="blog-img-wrapper">
+									<div class="blog-img" style="background-image:url(img/blogs/blog-2.jpeg)"></div>
+								</div>
+								<div class="blog-date"> <span>10</span> jan </div>
+							</div>
+							<div class="blog-content">
+								<a href="#">
+									<span class="h4">Lorem ipsum dolor sit amet</span>
+									<span class="p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+								</a>
+								<p class="views"><i class="fas fa-eye"></i> 976 <span><i class="fas fa-comment-alt"></i> 53</span></p>
+							</div>
 						</div>
+
+						<div class="blog-item">
+							<div class="blog-first-container">
+								<div class="blog-img-wrapper">
+									<div class="blog-img" style="background-image:url(img/blogs/blog-1.jpeg)"></div>
+								</div>
+								<div class="blog-date"> <span>8</span> jan </div>
+							</div>
+							<div class="blog-content">
+								<a href="#">
+									<span class="h4">Lorem ipsum dolor sit amet</span>
+									<span class="p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+								</a>
+								<p class="views"><i class="fas fa-eye"></i> 1640 <span><i class="fas fa-comment-alt"></i> 870</span></p>
+							</div>
+						</div>
+
 					</div>
-				
 				</div>
-				</div>
 
-				<div class="map-block">
-					
-				</div>
-			</section>
 
-		</div>
-		<div id="my-footer"></div>
+			</div>
+		</section>
 
+		<section class="section-map">
+			<div class="map-wrapper">
+
+
+				<div id="map"></div>
+
+				<script>
+					function initMap() {
+
+						mapWrap = document.getElementById('map-content');
+						mapDiv = document.getElementById('map');
+						map = new google.maps.Map(mapDiv, {
+							zoom: 13,
+							center: new google.maps.LatLng(40.17913562, 44.50269699),
+							disableDefaultUI: true,
+						});
+
+						marker = new google.maps.Marker({
+							position: new google.maps.LatLng(40.17913562, 44.50269699),
+							map: map,
+						});
+						marker.setVisible(false);
+
+					}
+				</script>
+
+
+
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwgx-Qg2CkkoNj4_92h695IuLozY_F0g0&callback=initMap"
+				async defer></script>
+
+
+				<div id="map-content" class="after"> <span><i class="fas fa-map-marker-alt"></i></span>Open map</div>
+			</div>
+		</section>
 
 	</div>
+	<div id="my-footer"></div>
+
+
+</div>
 
 
 
-	<link rel="stylesheet" href="css/main.min.css">
-	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script> -->
-	<script src="js/scripts.min.js"></script>
+<link rel="stylesheet" href="css/main.min.css">
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script> -->
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>

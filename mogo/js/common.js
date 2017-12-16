@@ -112,7 +112,7 @@ $('.item-header').click(function(event){
 
 
 $(".item-content").mCustomScrollbar({
-	theme: "dark"
+	theme:"my-theme"
 });
 
 
@@ -124,7 +124,7 @@ $(".testimonal.owl-carousel").owlCarousel({
 	navText: "",
 	dots: false,
 	loop: true,
-	// autoplay: true,
+	autoplay: true,
 	autoplayTimeout: 10000,
 	autoplayHoverPause: true,
 	smartSpeed:  700,
@@ -132,6 +132,62 @@ $(".testimonal.owl-carousel").owlCarousel({
 	autoplaySpeed: 700,
 	navSpeed: 700,
 });
+
+/********************** google map ******************/
+myMarker = 0;
+
+$('#map-content').click(function(){
+	$(".map-wrapper").toggleClass('wrapper-open');
+	$("#map").toggleClass('map-open');
+	$(this).toggleClass('content-top');
+
+if($(this).hasClass("content-top"))
+{
+$(this).html('<i class="fas fa-times"></i> Close map');
+}
+else
+{ 
+ $(this).html('<span ><i class="fas fa-map-marker-alt"></i></span> Open map');
+}
+
+	var interval = setInterval( function(){ 
+		google.maps.event.trigger(map, "resize");
+		map.panTo(marker.getPosition());
+		map.setCenter(marker.getPosition()); 
+		 }, 20);
+
+	setTimeout(function(){
+$('.section-map').scrollView();
+		clearInterval(interval);
+		
+		 
+		
+		if (myMarker == 0 ) {
+			marker.setAnimation(google.maps.Animation.BOUNCE);
+			marker.setVisible(true);
+			myMarker= 1;
+			
+		} else if (myMarker == 1) {
+			marker.setAnimation(null);
+			myMarker =0;
+			marker.setVisible(false);
+			
+		};
+		
+	}, 800);
+
+});
+
+
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top - (($(window).height() - $('.section-map').height()) / 2 -40)
+    }, 'slow','swing');
+  });
+}
+
+
 
 });
 
