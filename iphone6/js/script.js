@@ -456,10 +456,10 @@ cdtime.formatDuration = function(ms, baseunit){
 
 document.addEventListener('DOMContentLoaded', function(){
   var christmascounter = document.getElementById('christmascounter')
-  var daysdiv = christmascounter.querySelector('.days')
-  var hoursdiv = christmascounter.querySelector('.hours')
-  var minutesdiv = christmascounter.querySelector('.minutes')
-  var secondsdiv = christmascounter.querySelector('.seconds')
+  var daysdiv = christmascounter.querySelector('.Дней')
+  var hoursdiv = christmascounter.querySelector('.Часов')
+  var minutesdiv = christmascounter.querySelector('.Минут')
+  var secondsdiv = christmascounter.querySelector('.Секвунд')
 
   function padandwrap(number){
     // padandwrap function
