@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', function(){
     christmasyear += 1
   }
 
-  var christmas = new cdtime("2018-12-25 00:00:00")
+  var christmas = new cdtime("2018-04-25 00:00:00")
   christmas.oncountdown = function(ms){
     if (ms <= 0){ // if time's up
       alert("2016 Christmas is Upon Us!") // do something
