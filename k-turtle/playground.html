@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>K-turtle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/turtle.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/57x57apple.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72x72apple.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114x114apple.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; height: 100%; } html { background-color: #fff; height: 100%; }
+		#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #edebe7;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(img/preloader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+	</style>
+</head>
+
+<body class="isplayground">
+
+
+	<header class="main-header">
+		
+		<div class="logo-panel">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-9 col-sm-8 col-xs-8">
+						<a href="index.html" class="logo">K-Turtle<span>.</span></a>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-4">
+						<div class="input-wrap">
+							<div class="cnt_int">
+								<input type="text" name="search" placeholder="search...">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+
+						<button id="btn-mmnu" class="hamburger hamburger--collapse" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
+
+					</div>					
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12 navbar">
+						<div class="navul-wrap">
+							<ul>
+								
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li class="active"><a href="playground.html">Playground</a></li>
+								<li><a href="signinup.html">Sign In / Up</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</header>
+
+	
+	<section class="s_playground">
+		
+		<div class="container">
+
+			<div class="col-md-12 hidden-xs">
+
+				<div class="playbox">
+
+					<div class="row">
+
+						<div class="col-md-12">
+							<div class="boxhead">
+								<h2>Game title</h2>
+								<a href="#">See code</a>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+
+							<div class="gamebox">
+
+							</div>
+
+						</div>
+
+						<div class="col-md-6 hidden-sm">
+
+							<div class="game_descr">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id congue neque. Curabitur finibus, est vel porttitor tincidunt, elit tortor molestie lorem, eleifend bibendum ante tortor non sem. Vestibulum quis neque eget orci molestie egestas ut a ipsum. Sed a felis aliquet, tincidunt neque sit amet, finibus eros. Morbi condimentum faucibus lorem, sit amet fermentum leo finibus ac. Vivamus sodales ligula et tincidunt imperdiet. Vivamus pellentesque elit ut nulla euismod viverra. Vivamus eget bibendum ligula, sit amet scelerisque risus. Phasellus maximus justo metus, ornare ornare massa iaculis in. Donec dignissim porttitor nibh eget interdum.
+
+Nam nisi justo, congue quis enim ut, lobortis feugiat lacus. Ut tincidunt sit amet leo nec euismod. Pellentesque pellentesque gravida orci at maximus. Integer felis sem, mattis et massa vitae, consequat accumsan ligula. Phasellus vehicula maximus rutrum. Etiam sed mattis elit, sed posuere magna. Integer ultrices nisl vitae ante fringilla feugiat. Praesent egestas lorem a est blandit dignissim. Duis augue quam, egestas vitae diam id, pulvinar rutrum lectus. Fusce et semper metus. Morbi mollis elementum nunc, ac aliquam risus pellentesque ut. Vestibulum faucibus massa et porta convallis. Nam non aliquet magna. Morbi felis ipsum, faucibus ac purus nec, lobortis venenatis dolor. Pellentesque rhoncus, ligula ut scelerisque vehicula, eros est consequat nibh, non ornare quam leo ac enim.
+
+Fusce vel lectus magna. Etiam efficitur odio a enim eleifend vulputate. Cras quis purus lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed pellentesque augue, quis ultricies magna. Vestibulum ut felis mollis, maximus eros in, interdum neque. Etiam et velit lacus.
+
+Proin quis justo ac ipsum feugiat tempor. Sed sapien risus, semper eu nunc eget, consectetur euismod leo. Pellentesque gravida dui et ex tincidunt, id dictum mauris cursus. Maecenas laoreet mi arcu, sit amet maximus justo semper nec. Duis quis lacus sit amet lorem auctor scelerisque. Nam dignissim finibus pretium. Nullam justo lorem, gravida a blandit eu, volutpat in dui. Proin pretium tempus augue, tincidunt tempus dolor porttitor ut. Aenean congue porta sem sed commodo. Ut est urna, rutrum vel arcu id, lacinia blandit felis. Phasellus congue massa iaculis sapien tristique, a rhoncus leo interdum. Aliquam ultrices risus ut dictum ultricies. In efficitur convallis libero, vel consectetur eros laoreet at. Pellentesque lacinia sapien ac tellus vulputate, rutrum ornare sem congue.
+
+
+								</p>
+							</div>
+
+						</div>
+
+						<div class="col-md-12">
+
+							<div class="boxfooter">
+
+								<ul>
+									<li><i class="fas fa-heart"></i>  Likes </li>
+									<li><i class="fas fa-star"></i>  Stars </li>
+									<li><i class="fas fa-eye"></i>   Views </li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-12 hidden-sm hidden-md hidden-lg">
+				<div class="notavaltit">
+					<h1>The gamebox is not avaliable on this devices!</h1>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</section>
+
+
+	
+
+	<footer class="main-footer">
+	<div class="container">
+
+		<div class="row">
+			
+			<div class="main-footer-wrap">
+	
+
+				<div class="col-md-8 col-sm-6 col-xs-12">
+
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-telegram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+
+					<p class="site-author">Developed with passion and love by Hrach Khachatryan</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	</footer>
+
+
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+
+
+<div class="mobile-mnu">
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li class="active"><a href="contact.html">Contact</a></li>
+		<li><a href="playground.html">Playground</a></li>
+		<li><a href="signinup.html">Sign In / Up</a></li>
+	</ul>
+
+</div>
+
+
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="libs/owl.carousel/dist/owl.carousel.js"></script>
+	<script src="libs/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.min.js"></script>
+	<script src="libs/jQuery.equalHeights/jquery.equalheights.min.js"></script>
+	<script src="libs/customscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="libs/waypoints/lib/jquery.waypoints.js"></script>
+
+</body>
+</html>

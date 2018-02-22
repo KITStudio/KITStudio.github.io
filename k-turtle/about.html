@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>K-turtle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/turtle.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/57x57apple.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72x72apple.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114x114apple.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; height: 100%; } html { background-color: #fff; height: 100%; }
+		#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #edebe7;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(img/preloader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+	</style>
+</head>
+
+<body class="isabout">
+
+
+	<header class="main-header">
+		
+		<div class="logo-panel">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-9 col-sm-8 col-xs-8">
+						<a href="index.html" class="logo">K-Turtle<span>.</span></a>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-4">
+						<div class="input-wrap">
+							<div class="cnt_int">
+								<input type="text" name="search" placeholder="search...">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+
+						<button id="btn-mmnu" class="hamburger hamburger--collapse" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
+
+					</div>					
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12 navbar">
+						<div class="navul-wrap">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="active"><a href="about.html">About</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="playground.html">Playground</a></li>
+								<li><a href="signinup.html">Sign In / Up</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</header>
+
+
+	<section class="s_about">
+		
+		<div class="container">
+
+			<div class="row">
+
+				<div class=" col-md-6">
+				<div class="header-item">
+						<h1>About us</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla vel massa id pellentesque. Curabitur pharetra erat ac maximus commodo. Sed in velit maximus, malesuada urna sed, tincidunt nisi. Vivamus facilisis, metus ac efficitur facilisis, est libero semper magna, ut suscipit ex ipsum non nisi. Sed eu magna eu neque aliquet placerat. Aenean ac diam quis magna euismod mollis. Praesent eu euismod lectus. Etiam vestibulum, turpis at cursus dictum, elit mauris sagittis magna, nec accumsan velit tellus eu metus. In in ipsum sollicitudin, rhoncus sapien sed, dictum urna. Morbi sit amet egestas nisi.</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="header-item">
+						<iframe class="videoiframe" src="https://www.youtube.com/embed/JM50YxX3a88" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+			<div class="content_items">
+				<div class="col-md-6">
+
+					<div class="content_item">
+
+						<div class="cnt_img_wrap">
+
+							<div class="imgblock" style="background-image: url('img/items/macbook.png');">
+
+								
+
+							</div>
+
+						</div>
+
+						<div class="cnt_itm_descr">
+
+								<h3>Header text</h3>
+
+								<p>In hac habitasse platea dictumst. Etiam ut ultricies turpis. Fusce et nulla at leo suscipit semper non et nisi. Integer malesuada, dolor in maximus lacinia, eros purus mattis nibh, rhoncus consequat eros sapien in eros. Cras tempus facilisis dignissim. Etiam id sagittis purus, vitae imperdiet risus. Maecenas et odio est. Praesent quis elit in quam maximus finibus.</p>
+
+							</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="content_item">
+
+						<div class="cnt_img_wrap">
+
+							<div class="imgblock" style="background-image: url('img/items/amazing.png');">
+								
+
+							</div>
+
+						</div>
+
+						<div class="cnt_itm_descr">
+
+								<h3>Header text</h3>
+
+								<p>In hac habitasse platea dictumst. Etiam ut ultricies turpis. Fusce et nulla at leo suscipit semper non et nisi. Integer malesuada, dolor in maximus lacinia, eros purus mattis nibh, rhoncus consequat eros sapien in eros. Cras tempus facilisis dignissim. Etiam id sagittis purus, vitae imperdiet risus. Maecenas et odio est. Praesent quis elit in quam maximus finibus.</p>
+
+							</div>
+
+
+					</div>
+
+				</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+			<div class="content_items">
+				<div class="col-md-6">
+
+					<div class="content_item">
+
+						<div class="cnt_img_wrap">
+
+							<div class="imgblock" style="background-image: url('img/items/bobby.jpg');">
+
+								
+
+							</div>
+
+						</div>
+
+						<div class="cnt_itm_descr">
+
+								<h3>Header text</h3>
+
+								<p>In hac habitasse platea dictumst. Etiam ut ultricies turpis. Fusce et nulla at leo suscipit semper non et nisi. Integer malesuada, dolor in maximus lacinia, eros purus mattis nibh, rhoncus consequat eros sapien in eros. Cras tempus facilisis dignissim. Etiam id sagittis purus, vitae imperdiet risus. Maecenas et odio est. Praesent quis elit in quam maximus finibus.</p>
+
+							</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="content_item">
+
+						<div class="cnt_img_wrap">
+
+							<div class="imgblock" style="background-image: url('img/items/johny.jpg');">
+								
+
+							</div>
+
+						</div>
+
+						<div class="cnt_itm_descr">
+
+								<h3>Header text</h3>
+
+								<p>In hac habitasse platea dictumst. Etiam ut ultricies turpis. Fusce et nulla at leo suscipit semper non et nisi. Integer malesuada, dolor in maximus lacinia, eros purus mattis nibh, rhoncus consequat eros sapien in eros. Cras tempus facilisis dignissim. Etiam id sagittis purus, vitae imperdiet risus. Maecenas et odio est. Praesent quis elit in quam maximus finibus.</p>
+
+							</div>
+
+
+					</div>
+
+				</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+	
+	<footer class="main-footer">
+	<div class="container">
+
+		<div class="row">
+			
+			<div class="main-footer-wrap">
+	
+
+				<div class="col-md-8 col-sm-6 col-xs-12">
+
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-telegram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+
+					<p class="site-author">Developed with passion and love by Hrach Khachatryan</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	</footer>
+
+
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+
+
+<div class="mobile-mnu">
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="playground.html">Playground</a></li>
+		<li><a href="signinup.html">Sign In / Up</a></li>
+	</ul>
+
+</div>
+
+
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="libs/owl.carousel/dist/owl.carousel.js"></script>
+	<script src="libs/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.min.js"></script>
+	<script src="libs/jQuery.equalHeights/jquery.equalheights.min.js"></script>
+	<script src="/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="libs/customscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+
+</body>
+</html>

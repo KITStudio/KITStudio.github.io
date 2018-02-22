@@ -1,0 +1,125 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.owl-nav
+		.owl-prev, .owl-next
+			top: -325px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.owl-nav
+		.owl-prev, .owl-next
+			top: -275px
+	.logo-panel
+		.navbar
+			.navul-wrap
+				ul
+					li
+						a
+							font-size: 14px
+
+	.iscontact
+		p
+			text-align: center
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.logo-panel
+		input
+			display: none
+	.navbar
+		display: none
+	#btn-mmnu
+		display: inline-block
+	.owl-nav
+		display: none
+	.slide-description
+		display: none
+	.s_items
+		.items_header
+			ul
+				text-align: center
+	.pagination
+		ul
+			li
+				padding: 5px 10px
+	.main-footer
+		text-align: center
+		.site-author
+			text-align: center
+
+
+	.ishome
+		.info-items
+			opacity: 1
+		.pagination 
+			opacity: 1
+		.items_header
+			opacity: 1
+		.main-footer
+			&-wrap
+				ul
+					opacity: 1
+				.site-author
+					opacity: 1
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.forms
+		input
+			padding: 5px 0
+		.buttons
+			padding: 5px 10px
+		p
+			font-size: 13px
+		label
+			margin:
+				top: 18px
+				bottom: 16px
+	.logo-panel
+		.logo
+			font-size: 30px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	// .mobile-mnu
+	// 	display: none
+	// 	&.is-active
+	// 		display: none
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

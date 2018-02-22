@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>K-turtle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/turtle.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/57x57apple.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72x72apple.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114x114apple.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; height: 100%; } html { background-color: #fff; height: 100%; }
+		#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #edebe7;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(img/preloader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+	</style>
+
+</head>
+
+<body class="ishome">
+
+
+	<header class="main-header">
+		
+		<div class="logo-panel">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-9 col-sm-8 col-xs-8">
+						<a href="index.html" class="logo">K-Turtle<span>.</span></a>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-4">
+						<div class="input-wrap">
+							<div class="cnt_int">
+								<input type="text" name="search" placeholder="search...">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+
+						<button id="btn-mmnu" class="hamburger hamburger--collapse" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
+
+					</div>					
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12 navbar">
+						<div class="navul-wrap">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="playground.html">Playground</a></li>
+								<li><a href="signinup.html">Sign In / Up</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="slider">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="owl-carousel">
+
+							<div>
+								<img src="img/1.jpeg">
+								<div class="slide-description">
+									<h4><a href="#">Description 1</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque purus enim, commodo a enim in, condimentum aliquet magna.</p>
+								</div>
+							</div>
+							<div>
+								<img src="img/2.jpeg">
+								<div class="slide-description">
+									<h4><a href="#">Description 2</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque purus enim, commodo a enim in, condimentum aliquet magna.</p>
+								</div>
+							</div>
+							<div>
+								<img src="img/3.jpeg">
+								<div class="slide-description">
+									<h4><a href="#">Description 3</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque purus enim, commodo a enim in, condimentum aliquet magna.</p>
+								</div>
+							</div>
+							
+
+						</div>
+				</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</header>
+
+	<section class="s_items">
+
+		<div class="container">
+			
+			<div class="row">
+
+				<div class="items_header">
+					<h2>A Theme Unlike Any Other. Simply Fantastic!</h2>
+						<ul>
+							<li class="active"><a href="#">All</a></li>
+							<li>/ <a href="#">News</a></li>
+							<li>/ <a href="#">Design</a></li>
+							<li>/ <a href="#">Print</a></li>
+							<li>/ <a href="#">Art</a></li>
+							<li>/ <a href="#">Development</a></li>
+						</ul>
+					
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="info-items">
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/macbook.png');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Sticer Mule</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/amazing.png');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>10 Amazing Websites</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/apps.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Top iPhone Apps</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/photoshoot.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Photo Shoot</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/bobby.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Big Buck Bunny</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/johny.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Character Design</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/social.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Service Icons</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/wedding.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Wedding Card</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/pinterest.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Pinterest Icons</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/tablets.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>iPad 3 Review</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/media.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Social Media Buttons</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="info-item-wrap">
+							<div class="info-item">
+								<a href="playground.html">
+									<div class="img-wrap" style="background-image: url('img/items/silver.jpg');">
+										<i class="fas fa-eye"></i>
+									</div>
+								</a>
+								<div class="item-descr">
+									<h4>Silver UI Kit</h4>
+									<span>Date, Year</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in enim sem. Nullam accumsan eu velit at porta.</p>
+									<a href="playground.html" class="more">
+										>> More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		
+
+
+
+		</div>
+
+
+
+	</section>
+
+	<footer class="main-footer">
+	<div class="container">
+
+		<div class="row">
+			
+			<div class="main-footer-wrap">
+	
+
+				<div class="col-md-8 col-sm-6 col-xs-12">
+
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-telegram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+
+					<p class="site-author">Developed with passion and love by Hrach Khachatryan</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	</footer>
+
+
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+
+
+<div class="mobile-mnu">
+
+	<ul>
+
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="playground.html">Playground</a></li>
+		<li><a href="signinup.html">Sign In / Up</a></li>
+
+	</ul>
+
+</div>
+
+
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="libs/owl.carousel/dist/owl.carousel.js"></script>
+	<script src="libs/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.min.js"></script>
+	<script src="libs/jQuery.equalHeights/jquery.equalheights.min.js"></script>
+	<script src="libs/customscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="libs/waypoints/lib/jquery.waypoints.js"></script>
+
+</body>
+</html>
