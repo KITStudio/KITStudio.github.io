@@ -11,6 +11,8 @@ $(function() {
 				loop: true
 			});
 
+
+
 			$('.header-item').equalHeights();
 
 			//$('#loader').fadeOut(2500);
@@ -29,11 +31,13 @@ $(function() {
 	});
 
 
-	$('.cnt_int .fa-search').click(function(){
+	$('.cnt_int .search-wrap').click(function(){
 		$('.cnt_int').toggleClass('active');
 	});
 
-
+	// $('.pagination ul li').click(function(){
+	// 	$('.pagination ul li a').click();
+	// });
 	
 	$("#btn-mmnu").click(function() {
 		$(this).toggleClass('is-active');
