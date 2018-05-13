@@ -1,5 +1,8 @@
 body{
 	background: url(2740861-dark-space-wallpapers.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .days{
 	width: 100px;
