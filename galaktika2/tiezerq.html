@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kosmos</title>
+	<link rel="stylesheet" href="aregaknayinhamakarg.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="days">
+		<div class="ad"><h1>Day</h1></div>
+		<div class="bd"><h1 id="day"></h1></div>
+	</div>
+	<div class="erkir"></div>
+	<div class="lusin"></div>
+</body>
+	<script>
+			var num = 1;
+
+(function() {
+
+    if (num < 31) {
+        document.getElementById("day").innerHTML = num;
+       	num++;
+        setTimeout(arguments.callee, 645);
+    } 
+})();
+
+	</script>
+</html>
