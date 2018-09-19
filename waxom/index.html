@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }
+	.preloader {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #c7b299;
+		z-index: 99999;
+		opacity: 1;
+		transition: all .5s ease;
+	}
+
+	.preloader::before {
+		content: url('img/loader.gif');
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}</style>
+
+</head>
+
+<body class="active">
+
+	<header class="main-header" style="background-image: url('img/header.jpg');">
+		<div class="container">
+			<div class="row">
+				<div class="navbar">
+					<div class="col-md-4 col-sm-12">
+						<div class="logo-wrap">
+							<a href="#" class="logo">
+								<img src="img/logo.png" alt="Waxom">
+								Waxom
+							</a>
+						</div>
+					</div>
+					<div class="col-md-8 hidden-sm hidden-xs">
+						<ul>
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Shortcodes</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+							<li class="search">
+								<a href="#"><i class="fas fa-search"></i></a>		
+								<div class="search-field">
+									<input type="text">
+									<button class="search-button"><i class="fas fa-search"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="header-slider owl-carousel">
+					<div class="slider-item">
+						<p class="slider-item-title">Uniquie and Modern Deisgn</p>
+						<p class="slider-item-main-title">
+							Portfolio PSD Template
+						</p>
+						<p class="slider-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac. Donec pharetra neque eget fermentum eleifend. Donec a magna erat.
+						</p>
+						<a href="#" class="button">
+							Get Started 
+						</a>
+					</div>
+					<div class="slider-item">
+						<p class="slider-item-title">Uniquie and Modern Deisgn</p>
+						<p class="slider-item-main-title">
+							Portfolio PSD Template
+						</p>
+						<p class="slider-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+						<a href="#" class="button">
+							Get Started 
+						</a>
+					</div>
+					<div class="slider-item">
+						<p class="slider-item-title">Uniquie and Modern Deisgn</p>
+						<p class="slider-item-main-title">
+							Portfolio PSD Template
+						</p>
+						<p class="slider-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.
+						</p>
+						<a href="#" class="button">
+							Get Started 
+						</a>
+					</div>
+					<div class="slider-item">
+						<p class="slider-item-title">Uniquie and Modern Deisgn</p>
+						<p class="slider-item-main-title">
+							Portfolio PSD Template
+						</p>
+						<p class="slider-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac. Donec pharetra neque eget fermentum eleifend.
+						</p>
+						<a href="#" class="button">
+							Get Started 
+						</a>						
+					</div>
+					<div class="slider-item">
+						<p class="slider-item-title">Uniquie and Modern Deisgn</p>
+						<p class="slider-item-main-title">
+							Portfolio PSD Template
+						</p>
+						<p class="slider-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.
+						</p>
+						<a href="#" class="button">
+							Get Started 
+						</a>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger-wrap">
+			<div class="hamburger hamburger--spin">
+			  <div class="hamburger-box">
+			    <div class="hamburger-inner"></div>
+			  </div>
+			</div>
+		</div>
+
+	</header>
+	<section class="s_steps">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-6">
+					<div class="steps-item">
+						<i class="fas fa-pencil-alt"></i>
+						<p class="steps-item-title">Web & App Design</p>
+						<p class="steps-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="steps-item">
+						<i class="fas fa-server"></i>
+						<p class="steps-item-title">Development</p>
+						<p class="steps-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="steps-item">
+						<i class="fas fa-cog"></i>
+						<p class="steps-item-title">Customization</p>
+						<p class="steps-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="steps-item">
+						<i class="fas fa-folder-open"></i>
+						<p class="steps-item-title">Marketing</p>
+						<p class="steps-item-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s_waxom s_typical">
+		<div class="top-title-wrap">
+			<p class="top-title">Waxom is Realization of your Ideas.</p>
+			<p class="top-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>
+		<img src="img/browser.png" alt="Browser">
+	</section>
+	<section class="s_theme">
+		<div class="container">
+			<div class="row">
+				<div class="par-wrap">
+					<p class="theme-title"><span>Waxom</span> Multipurpose WordPress Theme</p>
+					<p class="theme-descr">Dont Forget to Rate the Template Thanks so much!</p>
+				</div>
+				<a href="#" class="button">Purchase Now</a>
+			</div>
+		</div>
+	</section>
+	<section class="s_projects s_typical">
+		<div class="top-title-wrap">
+			<p class="top-title">Our Latest Projects.</p>
+			<p class="top-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>
+		<ul class="projects-filter">
+			<li class="active all">All</li>
+			<li class="web">Web Design</li>
+			<li class="mobile">Mobile App</li>
+			<li class="illustration">Illustration</li>
+			<li class="photo">Photography</li>
+		</ul>
+		<div class="container">
+			<div class="row">
+				<div class="projects-item-wrap all web mobile active">
+				<div class="col-md-4 col-sm-6">
+					<div class="projects-item active all web mobile">
+						<div class="projects-item-img" style="background-image: url(img/project1.jpg)">
+							<div class="icon-wrap">
+								<a href="#"><i class="fas fa-link"></i></a>				
+								<a class="zoom" href="img/project1.jpg"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="projects-item-descr">
+							<p class="projects-title"><a href="#">Claritas Etiam Processus</a></p>
+							<p class="projects-title-descr">Photography, Nature</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="projects-item-wrap all photo active">
+				<div class="col-md-4 col-sm-6">
+					<div class="projects-item active all photo">
+						<div class="projects-item-img" style="background-image: url(img/project2.jpg)">
+							<div class="icon-wrap">
+								<a href="#"><i class="fas fa-link"></i></a>				
+								<a class="zoom" href="img/project2.jpg"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="projects-item-descr">
+							<p class="projects-title"><a href="#">Claritas Etiam Processus</a></p>
+							<p class="projects-title-descr">Photography, Nature</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="projects-item-wrap all illustration active">
+				<div class="col-md-4 col-sm-6">
+					<div class="projects-item active all illustration"> 
+						<div class="projects-item-img" style="background-image: url(img/project3.jpg)">
+							<div class="icon-wrap">
+								<a href="#"><i class="fas fa-link"></i></a>				
+								<a class="zoom" href="img/project3.jpg"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="projects-item-descr">
+							<p class="projects-title"><a href="#">Claritas Etiam Processus</a></p>
+							<p class="projects-title-descr">Photography, Nature</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="projects-item-wrap all photo active">
+				<div class="col-md-4 col-sm-6">
+					<div class="projects-item active all photo">
+						<div class="projects-item-img" style="background-image: url(img/project4.jpg)">
+							<div class="icon-wrap">
+								<a href="#"><i class="fas fa-link"></i></a>				
+								<a class="zoom" href="img/project4.jpg"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="projects-item-descr">
+							<p class="projects-title"><a href="#">Claritas Etiam Processus</a></p>
+							<p class="projects-title-descr">Photography, Nature</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="projects-item-wrap all illustration active">
+				<div class="col-md-4 col-sm-6">
+					<div class="projects-item active all illustration">
+						<div class="projects-item-img" style="background-image: url(img/project5.jpg)">
+							<div class="icon-wrap">
+								<a href="#"><i class="fas fa-link"></i></a>				
+								<a class="zoom" href="img/project5.jpg"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="projects-item-descr">
+							<p class="projects-title"><a href="#">Claritas Etiam Processus</a></p>
+							<p class="projects-title-descr">Photography, Nature</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="projects-item-wrap all photo active">
+				<div class="col-md-4 col-sm-6">
+					<div class="projects-item active all photo">
+						<div class="projects-item-img" style="background-image: url(img/project6.jpg)">
+							<div class="icon-wrap">
+								<a href="#"><i class="fas fa-link"></i></a>				
+								<a class="zoom" href="img/project6.jpg"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="projects-item-descr">
+							<p class="projects-title"><a href="#">Claritas Etiam Processus</a></p>
+							<p class="projects-title-descr">Photography, Nature</p>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			</div>
+		</div>
+				<div class="buttoncase"><a href="#" class="button">Load More</a></div>
+	</section>
+
+	<section class="s_video" style="background-image: url(img/video.jpg)">
+		<div class="video-wrap">
+			<div class="play-wrap">
+				<a href="#" class="video-play"><i class="far fa-play-circle"></i></a>
+			</div>
+			<p class="video-title">Waxom Video Presentation</p>
+			<p class="video-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac.</p>
+			<span class="video-duration">03:26</span>
+		</div>
+	</section>
+	<section class="s_mobile s_typical">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 hidden-xs hidden-sm">
+					<img src="img/iphoneindhand.png" alt="Hand holding iphone">
+				</div>
+				<div class="col-md-7">
+					<div class="iphone-content">
+						<p class="iphone-title">Exellent for Mobile Devices.</p>
+						<p class="iphone-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac. Donec pharetra neque eget fermentum eleifend. Donec a magna erat.</p>
+						<ul class="iphone-list">
+							<li><div class="list-icon-wrap"><i class="fas fa-angle-right"></i></div> Lorem ipsum</li>
+							<li><div class="list-icon-wrap"><i class="fas fa-angle-right"></i></div> Lorem ipsum dolor</li>
+							<li><div class="list-icon-wrap"><i class="fas fa-angle-right"></i></div> Lorem ipsum dolor sit</li>
+							<li><div class="list-icon-wrap"><i class="fas fa-angle-right"></i></div> Lorem ipsum dolor sit amet</li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</section>
+
+	<section class="s_counter">
+		<div class="counter one-counter">
+			<i class="fas fa-users"></i>
+			<p class="counter-num">3587</p>
+			<p class="counter-descr">Satisfied clients</p>
+		</div>
+		<div class="counter two-counter">
+			<i class="fas fa-coffee"></i>
+			<p class="counter-num">207</p>
+			<p class="counter-descr">Cups of Coffee</p>
+		</div>
+		<div class="counter three-counter">
+			<i class="far fa-comment"></i>
+			<p class="counter-num">2500</p>
+			<p class="counter-descr">Blog Posts</p>
+		</div>
+		<div class="counter four-counter">
+			<i class="far fa-heart"></i>
+			<p class="counter-num">873</p>
+			<p class="counter-descr">Likes</p>
+		</div>
+		<div class="counter five-counter">
+			<img src="img/dish.png" alt="Dish">
+			<p class="counter-num">900</p>
+			<p class="counter-descr">We Launched</p>
+		</div>
+
+	</section>
+	<section class="s_posts">
+		<div class="top-title-wrap">
+			<p class="top-title">Recent Posts.</p>
+			<p class="top-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>		
+		<div class="container">
+			<div class="row">
+
+			<div class="owl-carousel">
+				<div class="projects-slide-item">
+					<div class="col-md-4 col-sm-6">
+						<div class="projects-item">
+							<div class="projects-item-img" style="background-image: url('img/post1.jpg');">
+								<div class="calendar">
+									<div class="date">22</div>
+									<div class="month">Jun.</div>
+								</div>
+							</div>
+							<div class="projects-item-descr">
+								<p class="projects-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+								<p class="projects-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+							</div>
+						</div>
+					</div>	
+
+
+
+					<div class="col-md-4 col-sm-6">
+						<div class="projects-item">
+							<div class="projects-item-img" style="background-image: url('img/post2.jpg');">
+								<div class="calendar">
+									<div class="date">22</div>
+									<div class="month">Jun.</div>
+								</div>
+							</div>
+							<div class="projects-item-descr">
+								<p class="projects-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+								<p class="projects-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+							</div>
+						</div>
+					</div>	
+
+
+
+					<div class="col-md-4 col-sm-12">
+						<div class="projects-item">
+							<div class="projects-item-img" style="background-image: url('img/post3.jpg');">
+								<div class="calendar">
+									<div class="date">22</div>
+									<div class="month">Jun.</div>
+								</div>
+							</div>
+							<div class="projects-item-descr">
+								<p class="projects-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+								<p class="projects-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+							</div>
+						</div>
+					</div>	
+
+				</div>
+
+				<div class="projects-slide-item">
+					<div class="col-md-4 col-sm-6">
+						<div class="projects-item">
+							<div class="projects-item-img" style="background-image: url('img/project1.jpg');">
+								<div class="calendar">
+									<div class="date">22</div>
+									<div class="month">Jun.</div>
+								</div>
+							</div>
+							<div class="projects-item-descr">
+								<p class="projects-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+								<p class="projects-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+							</div>
+						</div>
+					</div>	
+
+
+
+					<div class="col-md-4 col-sm-6">
+						<div class="projects-item">
+							<div class="projects-item-img" style="background-image: url('img/project2.jpg');">
+								<div class="calendar">
+									<div class="date">22</div>
+									<div class="month">Jun.</div>
+								</div>
+							</div>
+							<div class="projects-item-descr">
+								<p class="projects-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+								<p class="projects-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+							</div>
+						</div>
+					</div>	
+
+
+
+					<div class="col-md-4 col-sm-12">
+						<div class="projects-item">
+							<div class="projects-item-img" style="background-image: url('img/project3.jpg');">
+								<div class="calendar">
+									<div class="date">22</div>
+									<div class="month">Jun.</div>
+								</div>
+							</div>
+							<div class="projects-item-descr">
+								<p class="projects-title"><a href="#">Lorem ipsum dolor sit amet</a></p>
+								<p class="projects-title-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+							</div>
+						</div>
+					</div>	
+
+				</div>
+
+
+			</div>
+			<div class="navigation">
+				<button class="prev"><span>‹</span></button>
+				<button class="next"><span>›</span></button>
+			</div>
+		</div>
+	</section>
+	<section class="s_partners" style="background-image: url(img/partners.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="partners-item" style="background-image: url(img/logo1.png);"></div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="partners-item" style="background-image: url(img/logo2.png);"></div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="partners-item" style="background-image: url(img/logo3.png);"></div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="partners-item" style="background-image: url(img/logo4.png);"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="s_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-item">
+						<div class="logo-wrap">
+							<a href="#" class="logo">
+								<img src="img/logo.png" alt="Waxom">
+								Waxom
+							</a>
+						</div>
+						<p class="footer-item-descr site-descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl neque, sit amet mattis libero eleifend ac. Donec pharetra neque eget fermentum eleifend. Donec a magna erat.	
+						</p>
+						<a href="#" class="link">Read More <i class="fas fa-caret-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-item">
+						<p class="footer-item-title">Recent Photos</p>
+						<div class="descr-item">
+							<span class="descr-caption">June 20 2018</span>
+							<p class="footer-item-descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+						</div>
+						<div class="descr-item second">
+							<span class="descr-caption">June 20 2018</span>
+							<p class="footer-item-descr">
+								Phasellus consequat nisl neque, sit amet mattis libero eleifend ac. 
+							</p>
+						</div>
+						<div class="descr-item">
+							<span class="descr-caption">June 20 2018</span>
+							<p class="footer-item-descr">
+								Donec pharetra neque eget fermentum eleifend. Donec a magna erat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-item">
+						<p class="footer-item-title">Our Twitter</p>
+						<div class="descr-item">
+							<p class="footer-item-descr">
+								<span>@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming
+							</p>
+							<span class="descr-caption">3 mins ago</span>
+						</div>
+						<div class="descr-item second">
+							<p class="footer-item-descr">
+								Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum antepisuerit litterarum
+							</p>
+							<span class="descr-caption">5 hours ago</span>
+						</div>
+						<div class="descr-item">
+							<p class="footer-item-descr">
+								Soluta nobis option <span class="load">bit.ly/1Hniso7</span>
+							</p>
+							<span class="descr-caption">20 days ago</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-item">
+						<p class="footer-item-title">Dribbble Widget</p>
+						<img class="dribbble" src="img/dribbble1.jpg">
+						<img class="dribbble" src="img/dribbble2.jpg">
+						<img class="dribbble" src="img/dribbble3.jpg">
+						<img class="dribbble" src="img/dribbble4.jpg">
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-7 col-xs-6">
+					<div class="main-footer-item-left">
+						<ul>
+							<li class="first">Copyright &copy; <span class="year"></span> <span>Waxom</span></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li class="last"><a href="#">Support</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-5 col-xs-6">
+					<div class="main-footer-item-right">
+						<p class="madeby">Made with passion and love by Hrach Khachatryan</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+<div class="video-dialog">
+	<div class="video">
+		<div class="video-header">
+			<div class="video-header-inner">
+				Watch this video <button class="close">X</button>
+			</div>
+		</div>
+		<div class="video-content">
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="up" title="Go to the top of the page"><i class="fas fa-angle-double-up"></i></div>
+
+
+
+
+<div class="preloader"></div>
+
+
+
+
+	
+
+<div class="mob-mnu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Portfolio</a></li>
+		<li><a href="#">Features</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Pricing</a></li>
+		<li><a href="#">Shortcodes</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Shopping</a></li>
+		<li><a href="#">Search</i></a></li>
+	</ul>
+</div>
+
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
