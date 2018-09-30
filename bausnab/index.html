@@ -4,32 +4,31 @@
 <head>
 
 	<meta charset="utf-8">
+	<!-- <base href="/"> -->
 
-	<title>Title</title>
+	<title>OptimizedHTML 4</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	
+	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
-
-	<!-- Chrome, Firefox OS and Opera -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
+
+	<!-- Custom HTML -->
 
 	<header>
 
@@ -40,7 +39,7 @@
 			<div class="container">
 				<div class="row">
 
-					<ul>
+					<ul class="max-width">
 						<li><a href="#">О нас</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">Помощь</a></li>
@@ -52,55 +51,58 @@
 
 			</div>
 		</div>
-		<div class="top-func-line">
-			<div class="container">
-				<div class="row">
-					
+		
+
+		<div class="container">
+			<div class="row">
+				<div class="top-func-line">
 					<div class="logo">
 						<a href="#"><img src="img/Logo_blue.svg" alt="Logo"></a>
 					</div>
+					
+					<div class="info-wrapper">
+						<ul >
 
-					<ul class="info-wrapper">
-						
-						<li>
-							<div class="tel">
-								<a href="tel:+74954567890"> +7(495) 456-78-90</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="search">
-								<span>Введите название рубрики или наименование товара</span>
-								<i class="icon-search"></i>
-
-							</div>
-						</li>
-
-						<li>
-							<div class="bookmark">
-								<a href="#">
-								<div class="icon-wrapper">
-									<i class="icon-small-bookmark"></i>
-									<div class = "number">1</div>
+							<li>
+								<div class="tel">
+									<a href="tel:+74954567890"> +7(495) 456-78-90</a>
 								</div>
-							</a>
-							</div>
-						</li>
+							</li>
 
-						<li>
-							<div class="cart">
-								<a href="#">
-									<div class="icon-wrapper">
-										<i class="icon-cart"></i>
-										<div class = "number">3</div>
-									</div>
+							<li>
+								<form class="search">
+									<input type="text" class="searchTerm" placeholder="Введите название рубрики или товара">
+									<button type="submit" class="searchButton">
+										<i class="icon-search"></i>
+									</button>
+								</form>
+							</li>
 
-									<span>310.590 руб.</span>
-								</a>
-							</div>
-						</li>
-					</ul>
+							<li>
+								<div class="bookmark">
+									<a href="#">
+										<div class="icon-wrapper">
+											<i class="icon-small-bookmark"></i>
+											<div class = "number">1</div>
+										</div>
+									</a>
+								</div>
+							</li>
 
+							<li>
+								<div class="cart">
+									<a href="#">
+										<div class="icon-wrapper">
+											<i class="icon-cart"></i>
+											<div class = "number">3</div>
+										</div>
+
+										<span>310.590 руб.</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -109,7 +111,7 @@
 			<div class="container">
 				<div class="row">
 
-					<ul>
+					<ul class="max-width">
 						<li><a href="#">ОТОПЛЕНИЕ И ВОДОСНАБЖЕНИЕ</a></li>
 						<li><a href="#">ОБЩЕСТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a></li>
 						<li><a href="#">ИНСТРУМЕНТЫ</a></li>
@@ -126,7 +128,7 @@
 		<div class="owl-carousel owl-theme header-carousel">
 
 
-			<div class="item" style="background-image:url('img/Mask Group 26.jpg')">
+			<div class="item" style="background-image:url('img/mask.jpg')">
 				<div class="container">
 					<div class="row">
 						<div class="item-desc">
@@ -137,7 +139,7 @@
 				</div>
 			</div>
 
-			<div class="item" style="background-image:url('img/Mask Group 26.jpg')">
+			<div class="item" style="background-image:url('img/mask.jpg')">
 				<div class="container">
 					<div class="row">
 						<div class="item-desc">
@@ -148,7 +150,7 @@
 				</div>
 			</div>
 
-			<div class="item" style="background-image:url('img/Mask Group 26.jpg')">
+			<div class="item" style="background-image:url('img/mask.jpg')">
 				<div class="container">
 					<div class="row">
 						<div class="item-desc">
@@ -161,12 +163,668 @@
 
 
 		</div>
-
-
-
 	</header>
 
-	<link rel="stylesheet" href="css/main.min.css">
+
+
+
+
+
+	<section class="manufacturer">
+
+		<div class="container">
+
+			<h3 class="h3">Производители</h3>
+
+
+			<div class="manuf-carousel">
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Dulux.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Pinotex.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Hammerite.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/dufa.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Profilux.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Caparol.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Tikurilla.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Caparol.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Akvateks.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/teks.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Beckers.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Akvateks.png" alt=""></div></div>
+
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Akvateks.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/teks.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Beckers.png" alt=""></div></div>
+				<div class="manuf-item"><div class="manuf-img-wrapper"><img src="img/Akvateks.png" alt=""></div></div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section-addver gray">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class=" adver-item " style="background-image:url(img/image1.JPG)">
+						<div class="text-wrapper"><h3>Полезные подарки</h3> <p>При покупке аккумуляторной садовой теxники <span>Dewalt Flexvolt</span></p></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="adver-item "  style="background-image:url(img/image2.JPG)">
+						<div class="text-wrapper"><h3>Садовая техника гардена</h3><p>Со скидкой 15%</p><a href="#">Получить Промокод</a></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="adver-item "  style="background-image:url(img/image3.JPG)">
+						<div class="text-wrapper"><h3>Розыгрыш газонакасилки </h3><p>Dewalt Dcmw 564P2</p><a href="#">Принять участие</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-promotions gray">
+
+		<div class="container">
+			<div class="row">
+
+
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska.png);"> </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							<p class="old-price">2540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							<p class="old-price">2540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-soft.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							<p class="old-price">2540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-diamond.jpg);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							<p class="old-price">2540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				
+
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-matt.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-fungicdal.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-supermat.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-supermat.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price red">1540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label red-bg">Акции</div>
+					</div>
+				</div>
+
+				<div class="all-items-link">
+					<a href="#">
+						<h4>Акции</h4>
+						<p>Вся Серия <i class="icon-big-arrow-right"></i></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="section-new gray">
+
+		<div class="container">
+			<div class="row">
+
+
+
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-matt.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">Новинки</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-fungicdal.png);"> </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">Новинки</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-supermat.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">Новинки</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-supermat.png);"> </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">Новинки</div>
+					</div>
+				</div>
+
+				<div class="all-items-link">
+					<a href="#">
+						<h4>Новинки</h4>
+						<p>Вся Серия <i class="icon-big-arrow-right"></i></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="section-bestseller gray">
+
+		<div class="container">
+			<div class="row">
+
+
+
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-matt.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">ХИТ ПРОДАЖ</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-fungicdal.png);"> </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">ХИТ ПРОДАЖ</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-supermat.png);" > </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">ХИТ ПРОДАЖ</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="sale-item">
+						<div class="sale-item-wrapper">
+							<div class="img-wrapper" style="background-image:url(img/kraska-supermat.png);"> </div>
+							<h4>DULUX Волшебная Белая Краска</h4>
+							<div class="code-block">Код: 110108</div>
+							<div class="desc">для потолка</div>
+							<p class="stars">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+							</p>
+							<p class= "price">1540 руб.</p>
+							<button class="button">Добавить в корзину</button>
+						</div>
+						<div class="bookmark-button-wrap">
+							<button><i class="icon-small-bookmark"></i></button>
+						</div>
+						<div class="label">ХИТ ПРОДАЖ</div>
+					</div>
+				</div>
+
+				<div class="all-items-link">
+					<a href="#">
+						<h4>Новинки</h4>
+						<p>Вся Серия <i class="icon-big-arrow-right"></i></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section-subscribe">
+		<div class="bg-img" style="background-image:url(img/bg2.jpg)">
+
+			<div class="container">
+
+
+				<div class="subscribe-block">
+					<h3>ПОДПИШИТЕСЬ <span>НА НАШИ АКЦИИ</span></h3>
+					<form action="">
+						<input type="email" placeholder="Эл. Почта" required>
+						<button class="button" type="submit">ПОДПИСАТЬСЯ</button>
+					</form>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section-articles gray">
+		<div class="container">
+			<h3>СТАТЬИ</h3>
+			<div class="row ">
+				
+
+
+				<div class="col">
+					
+						<div class="articles-item">
+							
+							<a href="#">
+
+							<div class="image-block">
+								<div class="bg-img " style="background-image:url(img/article-1.jpg)"></div>
+							</div>
+
+							<div class="content-wrapper">
+								<h4>ЧИСТАЯ РАБОТА</h4>
+								<p>Что сделал дизайнер, когда устал чистить сапоги</p>
+							</div>
+
+							</a>
+
+						</div>
+					
+				</div>
+
+				<div class="col">
+					
+						<div class="articles-item">
+							<a href="#">
+							<div class="image-block">
+								<div class="bg-img " style="background-image:url(img/article-2.jpg)"></div>
+							</div>
+							<div class="content-wrapper">
+								<h4>ПРОЕКТ ASIMOV</h4>
+								<p>Как заставить роботов работат</p>
+							</div>
+							</a>
+						</div>
+					
+				</div>
+
+				<div class="col">
+					
+						<div class="articles-item">
+							<a href="#">
+							<div class="image-block">
+								<div class="bg-img " style="background-image:url(img/article-3.jpg)"></div>
+							</div>
+							<div class="content-wrapper">
+								<h4>ГДЕ ПРИГОДИТСЯ ГАЗОВАЯ ГОРЕЛКА</h4>
+								<p>ТОП 10 лучших способов применения горелки</p>
+							</div>
+							</a>
+						</div>
+					
+				</div>
+
+				<div class="col">
+					
+						<div class="articles-item">
+							<a href="#">
+							<div class="image-block">
+								<div class="bg-img " style="background-image:url(img/article-4.jpg)"></div>
+							</div>
+							<div class="content-wrapper">
+								<h4>МЯЧ В ИГРЕ</h4>
+								<p>Какими мячами играют на Чемпионатах мира по футболу</p>
+							</div>
+							</a>
+						</div>
+					
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<div class="footer-logo">
+					<img class="img-responsive" src="img/Logo_gray.svg" alt="Logo" >
+					<h5>Мы принимаем</h5>
+					<p><i class="icon-book"></i> <i class="icon-master-card"></i> </p>
+				</div>
+			</div>
+			<div class="col">
+				<h5 >ОБСЛУЖИВАНИЕ КЛИЕНТОВ</h5>
+				<a href="#">Карта</a>
+				<a href="#">Политика Конфиденциальности</a>
+				<a href="#">Ваш Счет</a>
+				<a href="#">Search Terms</a>
+				<a href="#">Условия Поиска</a>
+			</div>
+			<div class="col">
+				<h5 >ОТЗЫВЫ</h5>
+				<a href="#">Срок Использования</a>
+				<a href="#">Способы Оплаты</a>
+				<a href="#">Руководство По Перевозке</a>
+				<a href="#">Куда Мы Доставляем</a>
+				<a href="#">Расчетное Время Доставки</a>
+			</div>
+			<div class="col">
+				<h5 >ОТЗЫВЫ</h5>
+				<div class="footer-contact"></div>
+				<address>Адрес: Lorem ipsum dolor sit amet</address>
+				<a href="mailto:Support@plazathemes.com">Эл. Адрес: Support@plazathemes.com</a>
+				<a href="tel:8000123456789">Телефон: (800) 0123 456 789</a>
+			</div>
+			<div class="col">
+				<h5 >МЫ В СОЦСЕТЯХ</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="copiright">
+		&copy; <span class="year"></span> GrandStroyMaterili. Все Права Защищены.
+	</div>
+</footer>
+
+
+
 	<script src="js/scripts.min.js"></script>
 
 </body>
