@@ -50,7 +50,7 @@ $('.manuf-carousel').slick({
       }
     },
      {
-      breakpoint: 350,
+      breakpoint: 450,
       settings: {
         slidesPerRow: 2,
         rows: 2,
