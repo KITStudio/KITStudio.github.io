@@ -65,4 +65,76 @@ var d = new Date();
      $(".year").html(year);
 
 
+
+$('.prod-carousel').slick({
+    dots: true,
+    // slidesPerRow: 4,
+    // rows: 1,
+    slidesToShow:4,
+    infinite: false,
+    speed: 500,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow:3,
+        
+      }
+    },
+     {
+      breakpoint: 768,
+      settings: {
+        slidesToShow:2,
+      }
+    },
+      {
+      breakpoint: 478,
+      settings: {
+       slidesToShow: 2,
+      }
+    },
+
+  ]
 });
+
+
+$('#menu').mmenu({
+
+    extensions: [ 'widescreen','effect-menu-slide',"border-offset","pagedim-black"],
+    navbar: {
+      title: ''
+    },
+    offCanvas: {
+      position: 'right'
+    },
+
+    "iconPanels": true,
+    "counters": true
+  });
+
+var api = $('#menu').data('mmenu');
+api.bind('open:finish', function(){
+
+  $('.hamburger').addClass('is-active');
+
+});
+api.bind('close:finish', function(){
+
+  $('.hamburger').removeClass('is-active');
+
+});
+
+$(".hamburger").click(function(){
+if ($(".hamburger").hasClass('is-active') ) {
+  api.close();
+  // $('.hamburger').removeClass('is-active');
+
+   };
+});
+ 
+
+
+
+});
+
+
