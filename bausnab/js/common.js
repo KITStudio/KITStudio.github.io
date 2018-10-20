@@ -107,31 +107,40 @@ $('#menu').mmenu({
     offCanvas: {
       position: 'right'
     },
-
+    //"slidingSubmenus": false,
     "iconPanels": true,
-    "counters": true
+    "counters": true,
+    //"offCanvas": false,
   });
 
 var api = $('#menu').data('mmenu');
 api.bind('open:finish', function(){
-
+ 
   $('.hamburger').addClass('is-active');
-
+  
 });
 api.bind('close:finish', function(){
 
   $('.hamburger').removeClass('is-active');
-
+ // $('.menu-hamburger .hamburger').css("visibility", "inherit");
+// $('.hamburger').css("visibility", "inherit");
 });
 
 $(".hamburger").click(function(){
+
 if ($(".hamburger").hasClass('is-active') ) {
   api.close();
+  
   // $('.hamburger').removeClass('is-active');
 
    };
+   // $('.hamburger').css("visibility", "hidden");
+   // $('.menu-hamburger .hamburger').css("visibility", "inherit");
 });
  
+
+
+
 
 
 
