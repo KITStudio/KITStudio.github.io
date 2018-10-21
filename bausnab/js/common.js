@@ -117,17 +117,18 @@ var api = $('#menu').data('mmenu');
 api.bind('open:finish', function(){
  
   $('.hamburger').addClass('is-active');
-  
+  //$("#menu").css("visibility", "visible");
 });
 api.bind('close:finish', function(){
 
   $('.hamburger').removeClass('is-active');
+  $("#menu").css("visibility", "hidden");
  // $('.menu-hamburger .hamburger').css("visibility", "inherit");
 // $('.hamburger').css("visibility", "inherit");
 });
 
 $(".hamburger").click(function(){
-
+$("#menu").css("visibility", "visible");
 if ($(".hamburger").hasClass('is-active') ) {
   api.close();
   
