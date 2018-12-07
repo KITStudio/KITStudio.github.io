@@ -46,7 +46,7 @@
 							<li data-menuanchor="secondPage"><a href="#secondPage">Մեր Մասին</a></li>
 							<li data-menuanchor="3rdPage"><a href="#3rdPage">Արտադրանք</a></li>
 							<li data-menuanchor="4rdPage"><a href="#4rdPage">Կապ</a></li>
-
+							<li data-menuanchor="5rdPage"><a href="#4rdPage">Կապ</a></li>
 						</ul>
 					</nav>
 
@@ -72,9 +72,9 @@
 			</button>
 
 			<div class="overlay">
-				<nav id="menu">
+				<nav id="menu-m">
 					<ul>
-						<li data-menuanchor="firstPage" class="active"><a href="#firstPage" >Գլխավոր</a></li>
+						<li data-menuanchor="firstPage" ><a href="#firstPage" >Գլխավոր</a></li>
 						<li data-menuanchor="secondPage"><a href="#secondPage">Մեր Մասին</a></li>
 						<li data-menuanchor="3rdPage"><a href="#3rdPage">Արտադրանք</a></li>
 						<li data-menuanchor="4rdPage"><a href="#4rdPage">Կապ</a></li>
@@ -95,8 +95,9 @@
 				<div class="number">
 					<a href="tel:+37494957575"><i class="fas fa-mobile-alt"></i> +374 94 957 575 </a>
 					<span class="social">
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fas fa-envelope"></i></a>
+						<!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
 					</span>
 				</div>
 
@@ -118,101 +119,113 @@
 			<div class="section-bgi " style="background-image: url(img/background.jpg);">
 
 				<div class="header-content">
-					<div class="logo-wrapper">
+					<div class="logo-wrapper" >
+						<!-- <object type="image/svg+xml" data="img/logo.svg">
 						<img src="img/logo.png" alt="Logo">
-					</div>
+					</object> -->
+					<!-- <img src="img/logoo.svg" alt="Logo"> -->
 
-					<h4>Արտադրված է Հայաստանում</h4>
-					<p> <span>&#10096;&#10096;</span>ԹԴ<span>--</span>Մ<span>&#10097;&#10097;</span>  ՍՊԸ</p>
-					<h2>Կաթնամթերքի Արտադրություն</h2>
-					<a href="#" class="our-products">Մեր արտադրանքը</a>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="160" viewBox="0 0 350 160">
+						<image id="Слой_0" data-name="Слой 0" x="1" y="9" width="347" height="144" xlink:href="data:img/png;base64,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"/>
+					</svg>
+
+
+
+
 
 				</div>
 
+				<h4>Արտադրված է Հայաստանում</h4>
+				<p> <span>&#10096;&#10096;</span>ԹԴ<span class="line"></span>Մ<span>&#10097;&#10097;</span>  ՍՊԸ</p>
+				<h2>Կաթնամթերքի Արտադրություն</h2>
+				<a href="#" class="our-products">Մեր արտադրանքը</a>
+
 			</div>
+
 		</div>
+	</div>
 
 
 
-		<div class="section" id="section1">
-			<div class="section-bgi " style="background-image: url(img/background.jpg);">
-				<div class="section-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class=" d-none d-lg-block col-4 col-xl-5">
-								<div class="right-content">
-									<div class="logo-wrapper">
-										<img src="img/logo.png" alt="Logo" class="img-responsive">
-									</div>
-									<h4>Արտադրված է Հայաստանում</h4>
-									<p> <span>&#10096;&#10096;</span>ԹԴ<span>--</span>Մ<span>&#10097;&#10097;</span>  ՍՊԸ</p>
-									<h2>Կաթնամթերքի Արտադրություն</h2>
-									<a href="#" class="our-products">Մեր արտադրանքը</a>
+	<div class="section" id="section1">
+		<div class="section-bgi " style="background-image: url(img/background.jpg);">
+			<div class="section-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class=" d-none d-lg-block col-4 col-xl-5">
+							<div class="right-content">
+								<div class="logo-wrapper">
+									<img src="img/logo.svg" alt="Logo" class="img-responsive">
 								</div>
+								<h4>Արտադրված է Հայաստանում</h4>
+								<p> <span>&#10096;&#10096;</span>ԹԴ<span class="line"></span>Մ<span>&#10097;&#10097;</span>  ՍՊԸ</p>
+								<h2>Կաթնամթերքի Արտադրություն</h2>
+								<a href="#" class="our-products">Մեր արտադրանքը</a>
 							</div>
+						</div>
 
-							<div class="col">
-								<div class="content">
-									<p>
-										Ընկերությունը 2016 թ.-ից ի վեր հայ սպառողին առաջարկում է թարմ անարատ կաթից պատրաստած ավանդական պանիրների յուրահատուկ տեսականի:
-									</p>
-									<p>     Ընկերության արտադրամասը տեղակայված է Սյունիքի մարզի Կապան քաղաքում: Ընկերության առաջին արտադրանքը` «ոչխարի պանիրը», կարճ ժամկետում գրավեց տեղի շուկան, ինչը թույլ տվեց ընկերությանը ընդլայնել արտադրվող պանրի տեսականին: Ներկայումս ընկերությունը իր «ՍԱՐՈ» ապրանքանիշի ներքո առաջարկում է ավանդական <span>«չանախ»</span>, <span>«ոչխարի պանիր»</span>, <span>«այծի պանիր»</span>, ինչպես նաև <span>«հալած յուղ»</span> և <span>«կարագ»</span>:</p>
-									<p> Ընկերության արտադրանքը ներկայացված է Սյունիքի մարզի և ք. Երևանի սուպերմարկետներում ինչպես նաև արտադրանքը արտահանվում է Ռուսաստանի Դաշնություն։</p>
-									<p>Առաջարկվող ամբողջ տեսականին արտադրվում է տարածաշրջանի ֆերմերներից մթերված թարմ անարատ կաթից` պահպանելով պանրի արտադրության տեխնիկական պայմանները, ինչը թույլ է տալիս ապահովել արտադրանքի որակական հատկանիշները: 
-									</p>
+						<div class="col">
+							<div class="content">
+								<p>
+									Ընկերությունը 2016 թ.-ից ի վեր հայ սպառողին առաջարկում է թարմ անարատ կաթից պատրաստած ավանդական պանիրների յուրահատուկ տեսականի:
+								</p>
+								<p>     Ընկերության արտադրամասը տեղակայված է Սյունիքի մարզի Կապան քաղաքում: Ընկերության առաջին արտադրանքը` «ոչխարի պանիրը», կարճ ժամկետում գրավեց տեղի շուկան, ինչը թույլ տվեց ընկերությանը ընդլայնել արտադրվող պանրի տեսականին: Ներկայումս ընկերությունը իր «ՍԱՐՈ» ապրանքանիշի ներքո առաջարկում է ավանդական <span>«չանախ»</span>, <span>«ոչխարի պանիր»</span>, <span>«այծի պանիր»</span>, ինչպես նաև <span>«հալած յուղ»</span> և <span>«կարագ»</span>:</p>
+								<p> Ընկերության արտադրանքը ներկայացված է Սյունիքի մարզի և ք. Երևանի սուպերմարկետներում ինչպես նաև արտադրանքը արտահանվում է Ռուսաստանի Դաշնություն։</p>
+								<p>Առաջարկվող ամբողջ տեսականին արտադրվում է տարածաշրջանի ֆերմերներից մթերված թարմ անարատ կաթից` պահպանելով պանրի արտադրության տեխնիկական պայմանները, ինչը թույլ է տալիս ապահովել արտադրանքի որակական հատկանիշները: 
+								</p>
 
-								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="gallery-container">
-						<div class="container">
+				<div class="gallery-container">
+					<div class="container">
 
-							<div id="gallery" style="display:none;">
+						<div id="gallery" style="display:none;">
 
-								<img alt="Image 1 Title" src="img/gallery/pexels-photo-1028225.jpeg"
-								data-image="img/gallery/pexels-photo-1028225.jpeg"
-								>
+							<img alt="Image 1 Title" src="img/gallery/pexels-photo-1028225.jpeg"
+							data-image="img/gallery/pexels-photo-1028225.jpeg"
+							>
 
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1394841.jpeg"
-								data-image="img/gallery/pexels-photo-1394841.jpeg"
-								>
+							<img alt="Image 2 Title" src="img/gallery/pexels-photo-1394841.jpeg"
+							data-image="img/gallery/pexels-photo-1394841.jpeg"
+							>
 
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1444492.jpeg"
-								data-image="img/gallery/pexels-photo-1444492.jpeg"
-								>
+							<img alt="Image 2 Title" src="img/gallery/pexels-photo-1444492.jpeg"
+							data-image="img/gallery/pexels-photo-1444492.jpeg"
+							>
 
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1502941.jpeg"
-								data-image="img/gallery/pexels-photo-1502941.jpeg"
-								>
-							</div>
+							<img alt="Image 2 Title" src="img/gallery/pexels-photo-1502941.jpeg"
+							data-image="img/gallery/pexels-photo-1502941.jpeg"
+							>
 						</div>
 					</div>
-
-
 				</div>
+
+
 			</div>
 		</div>
+	</div>
 
 
 
 
-		<div class="section" id="section2">
-			<div class="section-bgi content" style="background-image: url(img/background.jpg);">
+	<div class="section" id="section2">
+		<div class="section-bgi" style="background-image: url(img/background.jpg);">
 
-				<div class="section-wrapper"> 
-					
-					<div class="container">
-						<div class="row">
-							
+			<div class="section-wrapper"> 
 
-							<div class=" col-12">
-								<div class="right-content">
-									<div class="logo-wrapper">
-										<img src="img/logo.png" alt="Logo" class="img-responsive">
-									</div>
-									<h4>Արտադրված է Հայաստանում</h4>
+				<div class="container">
+					<div class="row">
+
+
+						<div class=" col-12">
+							<div class="right-content">
+								<div class="logo-wrapper">
+									<img src="img/logo.svg" alt="Logo" class="img-responsive">
+								</div>
+								<h4>Արտադրված է Հայաստանում</h4>
 									<!-- <p> <span>&#10096;&#10096;</span>ԹԴ<span>--</span>Մ<span>&#10097;&#10097;</span>  ՍՊԸ</p>
 									<h2>Կաթնամթերքի Արտադրություն</h2>
 									<a href="#" class="our-products">Մեր արտադրանքը</a> -->
@@ -222,33 +235,57 @@
 
 							<div class="col">
 								
-					<div id="gallery-nested" style="display:none;">
+								<div id="gallery-greed" style="display:none;">
 
-								<img alt="Image 1 Title" src="img/gallery/pexels-photo-1028225.jpeg"
-								data-image="img/gallery/pexels-photo-1028225.jpeg"
-								>
+									<img alt="Image 1 Title" src="img/gallery/pexels-photo-1028225.jpeg"
+									data-image="img/gallery/pexels-photo-1028225.jpeg"
+									>
 
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1394841.jpeg"
-								data-image="img/gallery/pexels-photo-1394841.jpeg"
-								>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1394841.jpeg"
+									data-image="img/gallery/pexels-photo-1394841.jpeg"
+									>
 
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1444492.jpeg"
-								data-image="img/gallery/pexels-photo-1444492.jpeg"
-								>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1444492.jpeg"
+									data-image="img/gallery/pexels-photo-1444492.jpeg"
+									>
 
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1502941.jpeg"
-								data-image="img/gallery/pexels-photo-1502941.jpeg"
-								>
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640076.jpeg"
-								data-image="img/gallery/pexels-photo-1640076.jpeg"
-								>
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640772.jpeg"
-								data-image="img/gallery/pexels-photo-1640772.jpeg"
-								>
-								<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640878.jpeg"
-								data-image="img/gallery/pexels-photo-1640878.jpeg"
-								>
-							</div>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1502941.jpeg"
+									data-image="img/gallery/pexels-photo-1502941.jpeg"
+									>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640076.jpeg"
+									data-image="img/gallery/pexels-photo-1640076.jpeg"
+									>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640772.jpeg"
+									data-image="img/gallery/pexels-photo-1640772.jpeg"
+									>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640878.jpeg"
+									data-image="img/gallery/pexels-photo-1640878.jpeg"
+									>
+									<img alt="Image 1 Title" src="img/gallery/pexels-photo-1028225.jpeg"
+									data-image="img/gallery/pexels-photo-1028225.jpeg"
+									>
+
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1394841.jpeg"
+									data-image="img/gallery/pexels-photo-1394841.jpeg"
+									>
+
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1444492.jpeg"
+									data-image="img/gallery/pexels-photo-1444492.jpeg"
+									>
+
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1502941.jpeg"
+									data-image="img/gallery/pexels-photo-1502941.jpeg"
+									>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640076.jpeg"
+									data-image="img/gallery/pexels-photo-1640076.jpeg"
+									>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640772.jpeg"
+									data-image="img/gallery/pexels-photo-1640772.jpeg"
+									>
+									<img alt="Image 2 Title" src="img/gallery/pexels-photo-1640878.jpeg"
+									data-image="img/gallery/pexels-photo-1640878.jpeg"
+									>
+								</div>
 
 							</div>
 
@@ -261,13 +298,98 @@
 
 
 		<div class="section" id="section3">
-			<div class="section-bgi content" style="background-image: url(img/background.jpg);">
-				<h1>Section 4</h1>
+			<div class="section-bgi " style="background-image: url(img/background.jpg);">
+				<div class="section-wrapper">
+					
+					<div class="container">
+						<div class="row">
+							<div class=" d-none d-lg-block col-4 col-xl-5">
+								<div class="right-content">
+									<div class="logo-wrapper">
+										<img src="img/logo.svg" alt="Logo" class="img-responsive">
+									</div>
+									<h4>Արտադրված է Հայաստանում</h4>
+									<p> <span>&#10096;&#10096;</span>ԹԴ<span class="line"></span>Մ<span>&#10097;&#10097;</span>  ՍՊԸ</p>
+									<h2>Կաթնամթերքի Արտադրություն</h2>
+									<a href="#" class="our-products">Մեր արտադրանքը</a>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="content">
+									<div class="map-wrapper">
+										<div id="map"></div>
+										<script>
+											function initMap() {
+												mapWrap = document.getElementById('map-content');
+												mapDiv = document.getElementById('map');
+												map = new google.maps.Map(mapDiv, {
+													zoom: 15,
+													center: new google.maps.LatLng(39.20336013, 46.40179217),
+													// disableDefaultUI: true,
+												});
+												marker = new google.maps.Marker({
+													position: new google.maps.LatLng(39.20336013, 46.40179217),
+													map: map,
+													animation: google.maps.Animation.BOUNCE,
+												});
+												marker.setVisible(true);
+												myMarker= 1;
+											}
+
+										</script>
+										<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGw5b0czta8bX3lYrZK-AefRdQtaWcVjQ&callback=initMap"
+										async defer></script>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<div class="contact-botoom-wrapper">
+				<div class="container">
+						<div class="row">
+							<div class="col-4 col-xl-5">
+								<div class="address">
+								<div class="address-wrapper">
+									<p>ՀՀ,Սյունիքի մարզ, ք․Կապան, <span>Մ․Ստեփանյան 10/31</span></p>
+									<p>ՀՀ,Սյունիքի մարզ, ք․Կապան, <span>Գործարանային 3/3/1</span></p>
+								</div>
+							</div>
+							</div>
+							<div class="col">
+								<form action="">
+									<div class="container">
+										<div class="row">
+									<div class="col">
+										<input type="text"  placeholder="անուն, ազգանուն">
+									<input type="email" required placeholder="Էլ. փոստ">
+									<input type="tel" required  placeholder="հեռախոս">
+									</div>
+									<div class="col">
+										<textarea name="textarea"  rows="7" placeholder="հաղորդագրություն"></textarea>
+									</div>
+									</div>
+									</div>
+									<button type="submit">ուղարկել</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+</div>
+				</div>
 			</div>
+		</div>
+	
+
+	<div class="section " id="section4">
+		<div class="section-bgi " style="background-image: url(img/background.jpg);">
 		</div>
 	</div>
 
-
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 

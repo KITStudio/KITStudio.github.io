@@ -35,24 +35,23 @@ jQuery("#gallery").unitegallery({
 					thumb_width:60,
 			});
 
-jQuery("#gallery-nested").unitegallery({
-				gallery_theme: "tiles",
-		 				tiles_type: "nested",
+jQuery("#gallery-greed").unitegallery({
 		 				lightbox_type: "compact",
-		 				lightbox_arrows_position:"inside",
+		 				theme_enable_text_panel: false,
+		 				lightbox_arrows_offset: 100,
+		 				grid_num_rows:2,
 		 				lightbox_slider_image_border_width: 3,
 		 				lightbox_show_textpanel: false,
-		 				// tiles_nested_optimal_tile_height: 120,
-		 				// tiles_nested_optimal_tile_width: 350,
-		 				// gallery_width:"90%",
-		 				tiles_min_columns: 2,
-
+		 				gallery_theme: "tilesgrid",
+		 				tile_border_width:2,
+		 				tile_shadow_blur:1,
+						tile_shadow_spread:1,
 			});
 
 });
 
 var myFullpage = new fullpage('#fullpage', {
-	anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+	anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage','5rdPage'],
         // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
         navigation: true,
         navigationPosition: 'right',
