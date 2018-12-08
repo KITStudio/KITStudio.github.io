@@ -21,7 +21,9 @@ $(function() {
 $(".our-products").click(function(){
 	fullpage_api.moveTo(3);
 	});
-
+$(".our-shops").click(function(){
+	fullpage_api.moveTo(5);
+	});
 
 jQuery("#gallery").unitegallery({
 					theme_enable_text_panel: false,
@@ -60,6 +62,9 @@ var myFullpage = new fullpage('#fullpage', {
         lazyLoad: true,
         loopBottom: true,
         // loopTop: true
+        scrollingSpeed: 900,
+        responsiveHeight: 450,
+        fitToSectionDelay: 1000,
       });
 
 
