@@ -1,24 +1,36 @@
+
+
+
 $(function() {
+
+
+
+
+
+ $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+
+$('.prod-img-carousel').slick({
+dots: true,
+infinite: false,
+speed: 500,
+arrows: false,
+});
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    //margin:10,
     nav:true,
     items: 1,
     navText: ['<i class="icon-arrow-left"></i>', '<i class="icon-arrow-right"></i>'],
     dots: true,
     smartSpeed: 600,
-    /*responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }*/
 });
 
 $('.manuf-carousel').slick({
@@ -99,9 +111,6 @@ $('.home-carousel').slick({
 
 
 $('.prod-carousel').slick({
-    //dots: true,
-    // slidesPerRow: 4,
-    // rows: 1,
     slidesToShow:4,
     infinite: false,
     speed: 500,
@@ -131,7 +140,6 @@ $('.prod-carousel').slick({
 
 $('.home-prod-carousel').slick({
     dots: true,
-    // slidesPerRow: 4,
     rows: 1,
     slidesToShow:4,
     infinite: false,
@@ -171,10 +179,8 @@ $('#menu').mmenu({
     offCanvas: {
       position: 'right'
     },
-    //"slidingSubmenus": false,
     "iconPanels": true,
     "counters": true,
-    //"offCanvas": false,
   });
 
 var api = $('#menu').data('mmenu');
@@ -187,20 +193,14 @@ api.bind('close:finish', function(){
 
   $('.hamburger').removeClass('is-active');
   $("#menu").css("visibility", "hidden");
- // $('.menu-hamburger .hamburger').css("visibility", "inherit");
-// $('.hamburger').css("visibility", "inherit");
 });
 
 $(".hamburger").click(function(){
 $("#menu").css("visibility", "visible");
 if ($(".hamburger").hasClass('is-active') ) {
   api.close();
-  
-  // $('.hamburger').removeClass('is-active');
-
    };
-   // $('.hamburger').css("visibility", "hidden");
-   // $('.menu-hamburger .hamburger').css("visibility", "inherit");
+
 });
  
 
@@ -209,23 +209,6 @@ if ($(".hamburger").hasClass('is-active') ) {
   $(".accordion").on("click", ".accordion-header", function() {
 $(this).toggleClass("active").next().slideToggle();
  });
-
-// $(".inner-accordion").on("click", ".accordion-header", function() {
-// $(this).toggleClass("active").next().slideToggle();
-
-//  });
-
-//var slider = document.getElementById('slider');
-// var slider = document.getElementById('range-slider');
-// noUiSlider.create(slider, {
-//     start: [20, 80],
-//     connect: true,
-//     range: {
-//         'min': 0,
-//         'max': 100
-//     }
-// });
-
 
 
 
@@ -237,13 +220,9 @@ if(keypressSlider != null){
 noUiSlider.create(keypressSlider, {
     start: [540, 2000],
     connect: true,
-    //tooltips: [true, wNumb({decimals: 1})],
     range: {
         'min': [0],
         '1%': [10, 10],
-        // '10%': [10, 10],
-        // '50%': [80, 50],
-        // '80%': 150,
         'max': 3000
     }
 });
@@ -321,34 +300,13 @@ inputs.forEach(function (input, handle) {
 
 }
 
-});
-
-
-
 jplist.init();
 
 
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-
-jQuery.expr.filters.offscreen = function(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-           (rect.x + rect.width) < 0 
-             || (rect.y + rect.height) < 0
-             || (rect.x > window.innerWidth || rect.y > window.innerHeight)
-         );
-};
-
-
-
-
 $(".dropdown").click(function(){
-  $(".dropdown-content", this).toggle();
-  if ($(".dropdown-content", this).is(':offscreen')) {
-    $(".dropdown-content", this).css("right","0");
-  }
+  $(".dropdown-content", this).toggleClass("show");
+   // document.getElementById("myDropdown").classList.toggle("show");
 })
 
 // Close the dropdown menu if the user clicks outside of it
@@ -365,3 +323,252 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
+var divs = $(".dropdown-content > ul > li");
+for(var i = 0; i < divs.length; i+=10) {
+  divs.slice(i, i+10).wrapAll("<div class='item'> </div>");
+}
+
+
+
+
+
+/*********************** 8 guynic heto texapoxum nerqevi tox*********************/
+
+
+var divs = $(".choose-color-block > li");
+for(var i = 0; i < divs.length; i+=8) {
+  divs.slice(i, i+8).wrapAll("<div class='color-wrapper'> </div>");
+}
+
+/*********************** yntrac guyny talis em product-color inputin *********************/
+
+$(".choose-color-block .color-wrapper > li").click(function(){
+  $(".choose-color-block .color-wrapper > li").removeClass('active');
+  $(this).addClass('active');
+  var col=($(this).data("color"));
+  $( "input[name='product-color']" ).val(col);
+  $( ".cuyc-tur" ).html( "<b>Guyn:</b> " + $( "input[name='product-color']" ).val() );
+  $('label[for="color-picker"] i').css("background-color", "transparent");
+})
+
+
+
+
+// function displayVals() {
+//   var colorValues = $( "#color-picker" ).val();
+//   $( "input[name='product-color']" ).val(colorValues);
+//   $( ".cuyc-tur" ).html( "<b>Guyn:</b> " + $( "input[name='product-color']" ).val() );
+// }
+ 
+// $( "#color-picker" ).change( displayVals );
+// displayVals();
+
+/********** yntrum em guyny u talis glxavor colori imputin *****************/
+
+$( "#color-picker" ).change(function() {
+    var colorValues = $( "#color-picker" ).val();    
+  $( "input[name='product-color']" ).val(colorValues);
+   $(".choose-color-block .color-wrapper > li").removeClass('active');
+  $('label[for="color-picker"] i').css("background-color", colorValues);
+
+});
+
+
+/********** yntrum em fasovkan u talis fasovkayi inputin *****************/
+var fas = $(".fasovki  li.active").data("fasovki");
+$( "input[name='product-fasovka']" ).val(fas);
+
+$(".fasovki  li").click(function(){
+   $(".fasovki  li").removeClass('active');
+  $(this).addClass('active');
+   var fas=($(this).data("fasovki"));
+ $( "input[name='product-fasovka']" ).val(fas);
+ 
+ var pr=($(this).data("fasovki-price")); 
+ $(".product-price span").html(pr); 
+ $( "input[name='product-price']" ).val(pr);
+ 
+ prodSum();
+
+priceTableDisc();
+
+})
+
+function priceTableDisc(){
+
+var a =$(".fasovki  li.active").data("fasovki-price");
+$(".price-table li:nth-child(1) span").html(a);
+
+  var disc=$(".fasovki  li.active").data("disc1");
+  var b = a*disc/100;
+  var s = a-b;
+  $(".price-table li:nth-child(2) span").html(s);
+   var disc=$(".fasovki  li.active").data("disc2");
+  var b = a*disc/100;
+  var s = a-b;
+  $(".price-table li:nth-child(3) span").html(s);
+
+}
+
+priceTableDisc();
+/***************************************  QUANTTY  *********************************/
+
+function prodSum(){
+
+  var quan = parseInt( $("input[name='product-quantity']").val(),10);
+  var prc = parseInt( $(".product-price span").text(), 10 );
+  var sum = quan* prc;
+
+  $(".product-total-price span").html(sum);
+
+  $( "input[name='product-total-price']" ).val(sum);
+  $( "input[name='product-price']" ).val(prc);
+
+
+}
+
+
+function numberWithCommas(number) {
+    var parts = number.toString().split(" ");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(" ");
+}
+
+
+prodSum();
+
+
+
+
+$(".product-price span").each(function() {
+    var num = $(this).text();
+    var commaNum = numberWithCommas(num);
+    $(this).text(commaNum);
+  });
+
+$(".product-total-price span").each(function() {
+    var num = $(this).text();
+    var commaNum = numberWithCommas(num);
+    $(this).text(commaNum);
+  });
+
+$(".but").on("click", function() {
+
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+
+    if ($button.text() == "+") {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+     // Don't allow decrementing below zero
+      if (oldValue > 1) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 1;
+      }
+    }
+    $button.parent().find("input").val(newVal);
+
+
+
+var quan = parseInt( $("input[name='product-quantity']").val(),10);
+var prc = parseInt( $(".product-price span").text(), 10 );
+var max;
+  
+var sum = quan* prc;
+  
+var max1 = $(".price-table ul > li:nth-child(1) > p" ).data("max-val");
+var max2 = $(".price-table ul > li:nth-child(2) > p").data("max-val");
+var max3 = $(".price-table ul > li:nth-child(3) > p").data("max-val");
+
+  
+   if(sum < max1){
+     var prc = $(".price-table ul > li:nth-child(1) > span").text().replace(/[^0-9]/gi, '');
+    prc = parseInt( prc, 10 );
+       sum = quan* prc;
+       $(".product-price span").html(prc);
+       $(".price-table ul > li").removeClass("active");
+        $(".price-table ul > li:nth-child(1)").addClass("active");
+   }
+   
+if(sum >= max2  && sum < max3){
+    var prc = $(".price-table ul > li:nth-child(2) > span").text().replace(/[^0-9]/gi, '');
+    prc = parseInt( prc, 10 );
+    $(".product-price span").html(prc);
+    sum = quan* prc;
+    $(".price-table ul > li").removeClass("active");
+   $(".price-table ul > li:nth-child(2)").addClass("active");
+   }
+
+   if(sum >= max3){
+    var prc = $(".price-table ul > li:nth-child(3) > span").text().replace(/[^0-9]/gi, '');
+    prc = parseInt( prc, 10 );
+    $(".product-price span").html(prc);
+   var sum = quan* prc;
+    $(".price-table ul > li").removeClass("active");
+     $(".price-table ul > li:nth-child(3)").addClass("active");
+   }
+
+ $(".product-total-price span").html(sum);
+$(".product-total-price span").each(function() {
+    var num = $(this).text();
+    var commaNum = numberWithCommas(num);
+    $(this).text(commaNum);
+  });
+
+$(".product-price span").each(function() {
+    var num = $(this).text();
+    var commaNum = numberWithCommas(num);
+    $(this).text(commaNum);
+  });
+
+
+$( "input[name='product-total-price']" ).val(sum);
+$( "input[name='product-price']" ).val(prc);
+
+});
+
+/*********************** get shop item code ***********************************/
+
+ var code = $(".item-cod span").text().replace(/[^0-9]/gi, '');
+code = parseInt( code, 10 );
+$('input[name="product-code"]').val(code);
+
+
+/*********   progresia ********/
+// var sum , prc
+// sum=0
+//   for ( var i=1; i<= quan ; i++){
+//     var sum = sum + prc;
+//     if( sum >= 15000){
+//       prc= 1425;
+//     }
+//     if( sum >= 40000){
+//       prc= 1350;
+//     }
+//   } 
+//    $(".product-total-price").html(sum);
+//   });
+
+
+
+$("#buy-form").submit(function(){
+    if ($("input[name='product-color']").val() == '') {
+    $(".product-detail .error").css("display", "inherit");
+    return false;
+    }
+  });
+
+/**** end *///
+$("body").css("display", "inherit")
+
+});
+
+
+
+
+
+
