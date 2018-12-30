@@ -112,6 +112,7 @@ $('.home-carousel').slick({
 
 $('.prod-carousel').slick({
     slidesToShow:4,
+    slidesToScroll: 4,
     infinite: false,
     speed: 500,
     responsive: [
@@ -119,19 +120,21 @@ $('.prod-carousel').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow:3,
-        
+        slidesToScroll: 3,
       }
     },
      {
       breakpoint: 768,
       settings: {
         slidesToShow:2,
+        slidesToScroll: 2,
       }
     },
       {
       breakpoint: 478,
       settings: {
        slidesToShow: 2,
+       slidesToScroll: 2,
       }
     },
 
@@ -423,24 +426,24 @@ function prodSum(){
   var sum = quan* prc;
 
   $(".product-total-price span").html(sum);
+  $(".product-price-mobile span").html(prc);
 
   $( "input[name='product-total-price']" ).val(sum);
   $( "input[name='product-price']" ).val(prc);
 
 
 }
+prodSum();
 
+
+
+/*********************************   tvery poxum e 3 3 probelov grum   ***************************************************/
 
 function numberWithCommas(number) {
     var parts = number.toString().split(" ");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     return parts.join(" ");
 }
-
-
-prodSum();
-
-
 
 
 $(".product-price span").each(function() {
@@ -454,6 +457,8 @@ $(".product-total-price span").each(function() {
     var commaNum = numberWithCommas(num);
     $(this).text(commaNum);
   });
+
+/**********************************************************************************************/
 
 $(".but").on("click", function() {
 
@@ -513,6 +518,9 @@ if(sum >= max2  && sum < max3){
    }
 
  $(".product-total-price span").html(sum);
+
+
+
 $(".product-total-price span").each(function() {
     var num = $(this).text();
     var commaNum = numberWithCommas(num);
@@ -528,6 +536,7 @@ $(".product-price span").each(function() {
 
 $( "input[name='product-total-price']" ).val(sum);
 $( "input[name='product-price']" ).val(prc);
+$(".product-price-mobile span").html(prc);
 
 });
 
