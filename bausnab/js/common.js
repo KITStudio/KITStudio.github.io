@@ -372,7 +372,7 @@ $(".choose-color-block .color-wrapper > li").click(function(){
 /********** yntrum em guyny u talis glxavor colori imputin *****************/
 
 $( "#color-picker" ).change(function() {
-    var colorValues = $( "#color-picker" ).val();    
+var colorValues = $( "#color-picker" ).val();
   $( "input[name='product-color']" ).val(colorValues);
    $(".choose-color-block .color-wrapper > li").removeClass('active');
   $('label[for="color-picker"] i').css("background-color", colorValues);
