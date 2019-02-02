@@ -571,6 +571,22 @@ $("#buy-form").submit(function(){
     }
   });
 
+
+$(".personal-area-accordion").on("click", ".personal-area-accordion-header", function() {
+    $(this).toggleClass("active").next().slideToggle();
+ });
+
+
+$('.personal-area-tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('.personal-area-tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+
 /**** end *///
 $("body").css("display", "inherit")
 
